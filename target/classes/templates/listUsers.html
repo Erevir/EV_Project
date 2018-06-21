@@ -8,51 +8,22 @@
 <body>
 <p th:text="'List of clients'" />
 
-<form action="#" th:action="@{/clients}" th:object="${createClientRequest}" method="post">
+<form action="#" th:action="@{/user}" th:object="${createUserRequest}" method="post">
     <div>
-        <label th:for="${firstName}">Client First Name</label>
+        <label th:for="${firstName}">User First Name</label>
         <input type="text" id="firstName" name="firstName" th:value="*{firstName}" />
     </div>
     <div>
-        <label th:for="${lastName}">Client Last Name</label>
+        <label th:for="${lastName}">User Last Name</label>
         <input type="text" id="lastName" name="lastName" th:value="*{lastName}" />
     </div>
     <div>
-        <label th:for="${gender}">Client Gender</label>
-        <input type="text" id="gender" name="gender" th:value="*{gender}" />
-    </div>
-        <div>
-        <label th:for="${phoneNumber}">Client Phone Number</label>
-        <input type="text" id="phoneNumber" name="phoneNumber" th:value="*{phoneNumber}" />
-    </div>
-    <div>
-        <label th:for="${address}">Client Address</label>
-
-    </div>
-    <div>
-        <label th:for="${city}">City</label>
-        <input type="text" id="city" name="city" th:value="*{city}" />
-    </div>
-    <div>
-        <label th:for="${streetName}">Street</label>
-        <input type="text" id="streetName" name="streetName" th:value="*{streetName}" />
-    </div>
-    <div>
-        <label th:for="${streetNumber}">Number</label>
-        <input type="text" id="streetNumber" name="streetNumber" th:value="*{streetNumber}" />
-    </div>
-    <div>
-        <label th:for="${zipCode}">ZIP Code</label>
-        <input type="text" id="zipCode" name="zipCode" th:value="*{zipCode}" />
+        <label th:for="${customerEmailAddress}">User EmailAddress</label>
+        <input type="text" id="customerEmailAddress" name="customerEmailAddress" th:value="*{customerEmailAddress}" />
     </div>
 
     <div>
-        <label th:for="${email}">Client Email</label>
-        <input type="text" id="email" name="email" th:value="*{email}" />
-    </div>
-
-    <div>
-        <input type="submit" id="doUpdate" name="save client" value="create client"/>
+        <input type="submit" id="doUpdate" name="create user" value="create user"/>
     </div>
 </form>
 
@@ -66,34 +37,18 @@
     <tr>
         <th>First Name</th>
         <th>Last Name</th>
-        <th>Gender</th>
-        <th>Phone Numer</th>
-        <th>Email</th>
+        <th>Email Address</th>
+        <th>Money Funds</th>
         <th>Id</th>
-
-        <th>Address</th>
-        <th>city</th>
-        <th>street</th>
-        <th>street number</th>
-        <th>zipcode</th>
-        <th>u</th>
-        <th>x</th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="client : ${clients}">
-        <td th:text="${client.firstName}"></td>
-        <td th:text="${client.lastName}"></td>
-        <td th:text="${client.gender}"></td>
-        <td th:text="${client.phoneNumber}"></td>
-        <td th:text="${client.email}"></td>
-        <td th:text="${client.id}"></td>
-
-        <td>Address</td>
-        <td th:text="${client.address.city}"></td>
-        <td th:text="${client.address.streetName}"></td>
-        <td th:text="${client.address.streetNumber}"></td>
-        <td th:text="${client.address.zipCode}"></td>
+    <tr th:each="user : ${clients}">
+        <td th:text="${user.firstName}"></td>
+        <td th:text="${user.lastName}"></td>
+        <td th:text="${user.emailAddress}"></td>
+        <td th:text="${user.moneyFunds}"></td>
+        <td th:text="${user.id}"></td>
 
         <td>
             <a th:href="@{/clients/} + ${client?.id} + '/'">Update</a>

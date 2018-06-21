@@ -2,17 +2,17 @@ package ro.siit.java10.evproject.dto;
 
 public class CreateUserReguest {
 
-    private String id;
+    private long id;
     private String firstName;
     private String lastName;
     private String customerEmailAddress;
     private int customerFunds;
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public CreateUserReguest setId(String id) {
+    public CreateUserReguest setId(long id) {
         this.id = id;
         return this;
     }

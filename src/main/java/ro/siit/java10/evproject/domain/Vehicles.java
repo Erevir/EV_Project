@@ -1,39 +1,58 @@
 package ro.siit.java10.evproject.domain;
 
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Vehicles {
+@Entity
+@Table(name = "Vehicle")
 
-    private String manufacturer;
-    private String model;
-    private String firstReg;
-    private String powerEngine;
-    private boolean isUsedVehicle;
-    private int rangePerCharge;
-    private boolean fastCharging;
-    private String fuelType;
-    private String vinCode;
-    private int price;
+public class Vehicles implements Serializable {
+    private static final long serialVersionUID = 1L;
 
-    public Vehicles(){
+        @Id
+        @Column(name="vincode")
+        private String vinCode;
+
+        @Column(name="manufacturer")
+        private String manufacturer;
+
+        @Column(name="model")
+        private String model;
+
+        @Column(name="firstreg")
+        private String firstReg;
+
+        @Column(name="powerengine")
+        private String powerEngine;
+
+        @Column(name = "isusedvehicle")
+        private boolean isUsedVehicle;
+
+        @Column(name="rangepercharge")
+        private int rangePerCharge;
+
+        @Column(name="isfastcharge")
+        private boolean fastCharging;
+
+        @Column(name="fueltype")
+        private String fuelType;
+
+        @Column(name="price")
+        private int price;
+
+//        @Column(name="dealership_name")
+//        private Dealership dealership;
+
+
+////        @ManyToMany
+//        private Dealership dealership_name;
+
+        public Vehicles(){
 
     }
 
-    public Vehicles(String manufacturer, String model, String firstReg, String powerEngine,
-                    boolean isUsedVehicle, int rangePerCharge,boolean fastCharging, String fuelType,
-                    String vinCode, int price) {
-        this.manufacturer = manufacturer;
-        this.model = model;
-        this.firstReg=firstReg;
-        this.powerEngine = powerEngine;
-        this.isUsedVehicle = isUsedVehicle;
-        this.rangePerCharge = rangePerCharge;
-        this.fastCharging = fastCharging;
-        this.fuelType = fuelType;
-        this.vinCode = vinCode;
-        this.price = price;
-    }
     public String getManufacturer() {
         return manufacturer;
     }
@@ -124,19 +143,27 @@ public class Vehicles {
         return this;
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Vehicles vehicles = (Vehicles) o;
-//        return getPrice() == vehicles.getPrice() && isUsedVehicle() == vehicles.isUsedVehicle() && getRangePerCharge() == vehicles.getRangePerCharge() && isFastCharging() == vehicles.isFastCharging() && Objects.equals(getManufacturer(), vehicles.getManufacturer()) && Objects.equals(getModel(), vehicles.getModel()) && Objects.equals(getFirstReg(), vehicles.getFirstReg()) && Objects.equals(getPowerEngine(), vehicles.getPowerEngine()) && Objects.equals(getVinCode(), vehicles.getVinCode()) && Objects.equals(getFuelType(), vehicles.getFuelType());
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//
-//        return Objects.hash(getManufacturer(), getModel(), getFirstReg(), getPowerEngine(), getVinCode(), getPrice(), isUsedVehicle(), getRangePerCharge(), isFastCharging(), getFuelType());
-//    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Vehicles)) return false;
+        Vehicles vehicles = (Vehicles) o;
+        return isUsedVehicle() == vehicles.isUsedVehicle() && getRangePerCharge() ==
+                vehicles.getRangePerCharge() && isFastCharging() == vehicles.isFastCharging() && getPrice() ==
+                vehicles.getPrice() && Objects.equals(getVinCode(), vehicles.getVinCode()) && Objects.equals(getManufacturer(),
+                vehicles.getManufacturer()) && Objects.equals(getModel(), vehicles.getModel()) && Objects.equals(getFirstReg(),
+                vehicles.getFirstReg()) && Objects.equals(getPowerEngine(), vehicles.getPowerEngine()) && Objects.equals(getFuelType(),
+                vehicles.getFuelType());
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(getVinCode(), getManufacturer(), getModel(), getFirstReg(), getPowerEngine(),
+                isUsedVehicle(), getRangePerCharge(), isFastCharging(), getFuelType(), getPrice());
+    }
+
     @Override
     public String toString() {
         return "Vehicles{" + "manufacturer='" + manufacturer + '\''

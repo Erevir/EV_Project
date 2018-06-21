@@ -1,14 +1,32 @@
 package ro.siit.java10.evproject.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import ro.siit.java10.evproject.dao_Repository.DealershipDAO;
+import ro.siit.java10.evproject.dao_Repository.VehicleDAO;
 import ro.siit.java10.evproject.domain.Vehicles;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Service
+@Transactional
 public class VehicleServiceImp implements VehiclesService {
 
+  @Autowired
+   private VehicleDAO vehicleDAO;
+  private DealershipDAO dealershipDAO;
+
+
+
     private List<Vehicles>vehicles = new ArrayList<>();
+
+    public VehicleServiceImp(VehicleDAO vehicleDAO, DealershipDAO dealershipDAO) {
+        this.vehicleDAO = vehicleDAO;
+        this.dealershipDAO = dealershipDAO;
+    }
 
     @Override
     public List<Vehicles> getVehicles() {
@@ -35,38 +53,4 @@ public class VehicleServiceImp implements VehiclesService {
 
     }
 
-//    @Service
-//    public class ProductServiceImpl implements ProductService {
-//
-//        //inject product DAO
-//        @Autowired
-//        private ProductDAO productDAO;
-//
-//        @Override
-//        @Transactional
-//        public List<Product> getProducts() {
-//
-//            return productDAO.getProducts();
-//        }
-//
-//        @Override
-//        @Transactional
-//        public Product getProduct(int theId) {
-//
-//            return productDAO.getProduct(theId);
-//        }
-//
-//    }
-//    private List<Vehicles>vehicles = new ArrayList<>();
-//
-//    @Override
-//    public List<Vehicles> getAll() {
-//        return vehicles;
-//    }
-//
-//    @Override
-//    public void createVehicle() {
-//          vehicles.add((Vehicles) vehicles);// why cast???  GENERICS
-//
-//    }
 }
