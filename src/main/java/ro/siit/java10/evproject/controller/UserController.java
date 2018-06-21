@@ -1,18 +1,23 @@
 package ro.siit.java10.evproject.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import ro.siit.java10.evproject.domain.User;
 import ro.siit.java10.evproject.dto.CreateUserReguest;
 import ro.siit.java10.evproject.service.UserService;
+import ro.siit.java10.evproject.service.UserServiceImp;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
+@RestController
 public class UserController {
+
     @Autowired
     private UserService userService;
 
@@ -35,7 +40,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
-    public String getUser(@PathVariable String id, Model model) {
+    public String getUser(@PathVariable long id, Model model) {
         User users = userService.getById(id);
         model.addAttribute("updateUserRequest", getUserRequest(users));
         model.addAttribute("user_id", id);
@@ -44,7 +49,7 @@ public class UserController {
 
 
     @RequestMapping(value = "/user/update/{id}", method = RequestMethod.POST)
-    public String updateUser(CreateUserReguest userReguest, @PathVariable String id) {
+    public String updateUser(CreateUserReguest userReguest, @PathVariable long id) {
 
         User user = getUser(userReguest);
         userService.updateUser(user,id);
@@ -53,7 +58,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/delete/{id}", method = RequestMethod.POST)
-    public String removeUser(@PathVariable String id, Model model) {
+    public String removeUser(@PathVariable long id, Model model) {
 
         userService.removeUser(id);
 

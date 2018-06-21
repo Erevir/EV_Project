@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
+<head>
+    <title>Lista clientilor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'List of clients'" />
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>List vehicles</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+    <div th:if="${not #lists.isEmpty(vehicles)}">
+        <h2>Vehicle list</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>vinCode</th>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>FirstReg</th>
+                <th>isUsedVehicle</th>
+                <th>FuelType</th>
+                <th>PowerEngine</th>
+                <th>FastCharging</th>
+                <th>RangePerCharge</th>
+                <th>Price</th>
+                <th>DealerShipName</th>
+            </tr>
+            <tr th:each="vehicle : ${vehicles}">
+                <td th:text="${vehicle.vinCode}"><a href="/product/${product.vinCode}">vinCode</a></td>
+                <td th:text="${vehicle.manufacturer}">Manufacturer</td>
+                <td th:text="${vehicle.model}">Model</td>
+                <td th:text="${vehicle.firstreg}">FirstReg</td>
+                <td th:text="${vehicle.isusedvehicle}">isUsedVehicle</td>
+                <td th:text="${vehicle.fueltype}">FuelType</td>
+                <td th:text="${vehicle.powerengine}">PowerEngine</td>
+                <td th:text="${vehicle.fastcharging}">FastCharging</td>
+                <td th:text="${vehicle.rangepercharge}">RangePerCharge</td>
+                <td th:text="${vehicle.price}">Price</td>
+                <td th:text="${vehicle.dealershipname}">DealerShipName</td>
+
+
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>
+

@@ -1,32 +1,36 @@
 package ro.siit.java10.evproject.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import ro.siit.java10.evproject.dao_Repository.*;
 import ro.siit.java10.evproject.domain.Order;
-import ro.siit.java10.evproject.domain.Vehicles;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
+@Transactional
 public class OrderServiceImp implements OrderService {
 
-public int totalPrice;
-Vehicles vehicles;
+    @Autowired
+    private OrderItemDAO orderItemDAO;
+    private VehicleDAO vehicleDAO;
+    private UserDao userDao;
+    private DealershipDAO dealershipDAO;
+    private GreenBonusDAO greenBonusDAO;
 
-//    private void calculateTotalPrice() {
-//        totalPrice = 0;
-//        for (Order item : orders) {
-//            item.setPrice(item.getProduct().getPrice()); // always use latest price
-//            totalPrice = totalPrice + vehicles.getPrice() - item.getQuantity());
-//        }
-//        if (coupon != null) {
-//            if (coupon.isValidToday() && totalPrice >= coupon.getMinimumPrice()) {
-//                totalPrice -= coupon.isIsPercentage() ? (totalPrice * coupon.getAmount() / 100) : coupon.getAmount();
-//            } else {
-//                coupon = null; // not valid anymore
-//            }
-//
-//        }
-//    }
+
     List<Order>orders = new ArrayList<>();
+
+    public OrderServiceImp(OrderItemDAO orderItemDAO, VehicleDAO vehicleDAO, UserDao userDao,
+                           DealershipDAO dealershipDAO, GreenBonusDAO greenBonusDAO) {
+        this.orderItemDAO = orderItemDAO;
+        this.vehicleDAO = vehicleDAO;
+        this.userDao = userDao;
+        this.dealershipDAO = dealershipDAO;
+        this.greenBonusDAO = greenBonusDAO;
+    }
 
     @Override
     public List<Order> getAll() {

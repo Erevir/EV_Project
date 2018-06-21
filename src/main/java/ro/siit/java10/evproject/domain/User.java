@@ -1,17 +1,37 @@
 package ro.siit.java10.evproject.domain;
 
-public class User {
+import javax.persistence.*;
+import java.io.Serializable;
 
-    private String id;
+
+@Entity
+@Table(name = "Customer")
+public class User implements Serializable{
+
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    @Column(name="id")
+    private long id;
+
+    @Column(name="FirstName")
     private String firstName;
+
+    @Column(name="LastName")
     private String lastName;
+
+    @Column(name="CustomerEmailAddress")
     private String customerEmailAddress;
+
+    @Column(name="CustomerFunds")
     private int customerFunds;
+
 
     public User (){
 
     }
-    public User(String id, String firstName, String lastName, String customerEmailAddress, int customerFunds) {
+    public User(long id, String firstName, String lastName, String customerEmailAddress, int customerFunds) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.customerEmailAddress = customerEmailAddress;
@@ -19,11 +39,13 @@ public class User {
         this.customerFunds = customerFunds;
 
     }
-    public String getId() {
+
+
+    public long getId() {
         return id;
     }
 
-    public User setId(String id) {
+    public User setId(long id) {
         this.id = id;
         return this;
     }
