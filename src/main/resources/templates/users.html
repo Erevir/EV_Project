@@ -21,6 +21,11 @@
         <label th:for="${customerEmailAddress}">User EmailAddress</label>
         <input type="text" id="customerEmailAddress" name="customerEmailAddress" th:value="*{customerEmailAddress}" />
     </div>
+    <div>
+        <label th:for="${customerFunds}">User MoneyFunds</label>
+        <input type="text" id="customerFunds" name="customerFunds" th:value="*{customerFunds}" />
+    </div>
+
 
     <div>
         <input type="submit" id="doUpdate" name="create user" value="create user"/>

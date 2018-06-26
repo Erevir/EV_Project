@@ -1,22 +1,21 @@
 package ro.siit.java10.evproject.service;
 
-import org.springframework.stereotype.Service;
 import ro.siit.java10.evproject.domain.User;
 
 import java.util.List;
+import java.util.Optional;
 
 
-@Service
 public interface UserService {
 
-    List<User> getAll();
+    List<User> getAll(); // read user
 
-    void createUser(User user);
+    User createUser(User user); //create and update user
 
-    void removeUser(long id);
+    void removeUser(long id); // delete user
 
-    void updateUser(User user, long id);
+    User getById(long id); // read user by id
 
-    User getById(long id);
+//    Optional<User> findByLastname();
 
 }

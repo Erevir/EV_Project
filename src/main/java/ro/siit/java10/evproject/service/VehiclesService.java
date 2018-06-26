@@ -6,20 +6,20 @@ import ro.siit.java10.evproject.domain.Vehicles;
 import java.util.List;
 
 
-@Service
+
 public interface VehiclesService {
 
     //perform database transactions through the vehicles DAO
 
-    public List<Vehicles> getVehicles();
+    public List<Vehicles> getAllVehicles();
 
-    public Vehicles getVehicles(String vinCode);
+    public Vehicles getById(Long vinCode);
 
-    public void createVehicles(Vehicles vehicles);
+//    Vehicles createVehicles(Vehicles vehicles);
 
-    public void updateVehicles(Vehicles vehicles, String vinCode);
+    //public void updateVehicles(Vehicles vehicles, String vinCode);
 
-    public void deleteVehicles(String vinCode);
+    void deleteVehicles(Long vinCode);
 
 
     }

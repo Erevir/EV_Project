@@ -2,57 +2,63 @@ package ro.siit.java10.evproject.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name = "dealership")
 public class Dealership implements Serializable {
-
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name="DealershipName")
-    private String dealerShipName;
+    @Column(name="id")
+    private long id;
 
-    @Column(name="DealershipAddress")
-    private String dealerShipAddress;
+    @Column(name="dealershipName")
+    private String dealershipName;
 
-    @Column(name="DealershipEmailAddress")
-    private String dealerShipEmailAddress;
+    @Column(name="dealershipAddress")
+    private String dealershipAddress;
 
-    public Dealership(){
+    @Column(name="dealershipEmailAddress")
+    private String dealershipEmailAddress;
 
-    }
-    public Dealership(String dealerShipName, String dealerShipAddress, String dealerShipEmailAddress) {
-        this.dealerShipName = dealerShipName;
-        this.dealerShipAddress = dealerShipAddress;
-        this.dealerShipEmailAddress = dealerShipEmailAddress;
-    }
+    @OneToMany(mappedBy = "dealership", cascade = CascadeType.ALL, fetch=FetchType.LAZY)
+    private List<Vehicles> vehicles;
 
-    public String getDealerShipAddress() {
-        return dealerShipAddress;
+    public long getId() {
+        return id;
     }
 
-    public Dealership setDealerShipAddress(String dealerShipAddress) {
-        this.dealerShipAddress = dealerShipAddress;
+    public Dealership setId(long id) {
+        this.id = id;
         return this;
     }
 
-    public String getDealerShipEmailAddress() {
-        return dealerShipEmailAddress;
+    public String getDealershipName() {
+        return dealershipName;
     }
 
-    public Dealership setDealerShipEmailAddress(String dealerShipEmailAddress) {
-        this.dealerShipEmailAddress = dealerShipEmailAddress;
+    public Dealership setDealershipName(String dealershipName) {
+        this.dealershipName = dealershipName;
         return this;
     }
 
-    public String getDealerShipName() {
-        return dealerShipName;
+    public String getDealershipAddress() {
+        return dealershipAddress;
     }
 
-    public Dealership setDealerShipName(String dealerShipName) {
-        this.dealerShipName = dealerShipName;
+    public Dealership setDealershipAddress(String dealershipAddress) {
+        this.dealershipAddress = dealershipAddress;
+        return this;
+    }
+
+    public String getDealershipEmailAddress() {
+        return dealershipEmailAddress;
+    }
+
+    public Dealership setDealershipEmailAddress(String dealershipEmailAddress) {
+        this.dealershipEmailAddress = dealershipEmailAddress;
         return this;
     }
 
@@ -61,22 +67,29 @@ public class Dealership implements Serializable {
         if (this == o) return true;
         if (!(o instanceof Dealership)) return false;
         Dealership that = (Dealership) o;
-        return Objects.equals(getDealerShipName(), that.getDealerShipName()) && Objects.equals(getDealerShipAddress(),
-                that.getDealerShipAddress()) && Objects.equals(getDealerShipEmailAddress(),
-                that.getDealerShipEmailAddress());
+        return getId() == that.getId() && Objects.equals(getDealershipName(), that.getDealershipName()) && Objects.equals(getDealershipAddress(), that.getDealershipAddress()) && Objects.equals(getDealershipEmailAddress(), that.getDealershipEmailAddress());
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(getDealerShipName(), getDealerShipAddress(), getDealerShipEmailAddress());
+        return Objects.hash(getId(), getDealershipName(), getDealershipAddress(), getDealershipEmailAddress());
     }
 
     @Override
     public String toString() {
-        return "Dealership{" + "dealerShipName='" + dealerShipName + '\''
-                + ", dealerShipAddress='" + dealerShipAddress + '\''
-                + ", dealerShipEmailAddress='" + dealerShipEmailAddress + '\'' + '}';
+        return "Dealership{" + "id=" + id + ", dealershipName='" + dealershipName + '\''
+                + ", dealershipAddress='" + dealershipAddress + '\'' + ", dealershipEmailAddress='"
+                + dealershipEmailAddress + '\'' + '}';
+    }
+
+    public List<Vehicles> getVehicles() {
+        return vehicles;
+    }
+
+    public Dealership setVehicles(List<Vehicles> vehicles) {
+        this.vehicles = vehicles;
+        return this;
     }
 
 }
