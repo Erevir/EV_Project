@@ -2,7 +2,7 @@ package ro.siit.java10.evproject.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ro.siit.java10.evproject.dao_Repository.GreenBonusDAO;
+import ro.siit.java10.evproject.Repository.GreenBonusDAO;
 import ro.siit.java10.evproject.domain.GreenBonus;
 
 import javax.transaction.Transactional;
@@ -20,9 +20,9 @@ public class GreenBonusImp implements GreenBonusService {
 
     public List<GreenBonus>greenBonuses = new ArrayList<>();
 
-    public GreenBonusImp(GreenBonusDAO greenBonusDAO) {
-        this.greenBonusDAO = greenBonusDAO;
-    }
+//    public GreenBonusImp(GreenBonusDAO greenBonusDAO) {
+//        this.greenBonusDAO = greenBonusDAO;
+//    }
 
     @Override
     public List<GreenBonus> getAll() {

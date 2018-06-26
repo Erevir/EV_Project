@@ -10,7 +10,7 @@ public class CreateVehiclesReguest {
     private int rangePerCharge;
     private boolean fastCharging;
     private String fuelType;
-    private String vinCode;
+    private Long vinCode;
     private int price;
 
     public String getManufacturer() {
@@ -85,11 +85,11 @@ public class CreateVehiclesReguest {
         return this;
     }
 
-    public String getVinCode() {
+    public Long getVinCode() {
         return vinCode;
     }
 
-    public CreateVehiclesReguest setVinCode(String vinCode) {
+    public CreateVehiclesReguest setVinCode(Long vinCode) {
         this.vinCode = vinCode;
         return this;
     }

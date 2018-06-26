@@ -1,17 +1,16 @@
 package ro.siit.java10.evproject.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
-import ro.siit.java10.evproject.dao_Repository.GreenBonusDAO;
-import ro.siit.java10.evproject.dao_Repository.OrderDAO;
-import ro.siit.java10.evproject.dao_Repository.UserDao;
-import ro.siit.java10.evproject.dao_Repository.VehicleDAO;
+import ro.siit.java10.evproject.Repository.*;
 import ro.siit.java10.evproject.domain.Dealership;
+import ro.siit.java10.evproject.exceptions.NotFoundException;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 
 @Service
@@ -19,44 +18,48 @@ import java.util.stream.Collectors;
 public class DealershipServiceImp implements DealershipService {
 
     @Autowired
+    private DealershipDAO dealershipDAO;
     private VehicleDAO vehicleDAO;
     private UserDao userDao;
     private GreenBonusDAO greenBonusDAO;
     private OrderDAO orderDAO;
 
-private List<Dealership> dealerships = new ArrayList<>();
-
-    public DealershipServiceImp(VehicleDAO vehicleDAO, UserDao userDao, GreenBonusDAO greenBonusDAO, OrderDAO orderDAO) {
-        this.vehicleDAO = vehicleDAO;
-        this.userDao = userDao;
-        this.greenBonusDAO = greenBonusDAO;
-        this.orderDAO = orderDAO;
-    }
-
+    private List<Dealership> dealerships = new ArrayList<>();
 
     @Override
     public List<Dealership> getAll() {
-        return dealerships;
+        return (List<Dealership>) dealershipDAO.findAll();
     }
 
     @Override
-    public void createDealership(Dealership dealership) {
-
+    public Dealership createDealership(Dealership dealershipToCreate) {
+        Dealership createDealership = dealershipDAO.save(dealershipToCreate);
+        return createDealership;
     }
 
     @Override
-    public void updateDealership(Dealership dealership, String dealerShipName) {
-
+    public void deleteDealership(long id) {
+//        Optional<Dealership> dealership = dealershipDAO.findById(id);
+//        if (!dealership.isPresent()) throw new NotFoundException("Dealership with id " + id + " does not exist");
+        dealershipDAO.deleteById(id);
     }
 
     @Override
-    public void deleteDealership(String dealerShipName) {
-
+    public Dealership findById(long id) {
+        Optional<Dealership> dealership = dealershipDAO.findById(id);
+        if (!dealership.isPresent()) throw new NotFoundException("Dealership with id " + id + " does not exist");
+        return dealership.get();
     }
 
-    @Override
-    public Dealership getByName(String dealerShipName) {
-        //TODO check that the id exists
-        return dealerships.stream().filter(c -> c.getDealerShipName() == dealerShipName).collect(Collectors.toList()).get(0);
-    }
+//    @Override
+//    public List<Dealership> findByName(String dealershipName) {
+//        List<Dealership> listDealership = dealershipDAO.findByName("%AutoTransilvania%");
+//        return listDealership;
+//    }
+
+//    @Override
+//    public Page<Dealership> findByNameContaining(String dealershipName, Integer pageNumber) {
+//        return dealershipDAO.findByNameContaining(dealershipName, new PageRequest(pageNumber - 1, PAGE_SIZE, Sort.Direction.ASC, "dealershipName"));
+//
+//    }
 }

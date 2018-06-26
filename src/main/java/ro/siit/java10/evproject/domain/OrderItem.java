@@ -7,7 +7,6 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 
-
 @Entity
 @Table(name = "order_item")
 
@@ -16,7 +15,7 @@ public class OrderItem implements Serializable {
         private static final long serialVersionUID = 1L;
 
         @Id
-        @GeneratedValue(strategy = GenerationType.AUTO)
+        @GeneratedValue //(strategy = GenerationType.AUTO)
         private Long id;
 
 //        @NotNull

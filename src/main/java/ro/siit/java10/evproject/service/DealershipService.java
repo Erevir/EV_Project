@@ -1,20 +1,23 @@
 package ro.siit.java10.evproject.service;
 
-import org.springframework.stereotype.Service;
+import org.springframework.data.domain.Page;
 import ro.siit.java10.evproject.domain.Dealership;
 
 import java.util.List;
-
 
 public interface DealershipService {
 
     List<Dealership> getAll();
 
-    void createDealership(Dealership dealership);
+    Dealership createDealership(Dealership dealership);
 
-    void updateDealership(Dealership dealership, String dealerShipName);
+    void deleteDealership(long id);
 
-    void deleteDealership(String dealerShipName);
+    Dealership findById(long id);
 
-    Dealership getByName(String dealerShipName);
+//    List<Dealership> findByName(String dealershipName);
+
+//    Page<Dealership> findByNameContaining(String dealershipName, Integer pageNumber);
+
+//    Dealership getByNameAndAddress(String dealershipName, String dealershipAddress);
 }

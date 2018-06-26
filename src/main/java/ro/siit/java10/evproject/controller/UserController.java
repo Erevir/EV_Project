@@ -2,93 +2,48 @@ package ro.siit.java10.evproject.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ro.siit.java10.evproject.domain.User;
-import ro.siit.java10.evproject.dto.CreateUserReguest;
-import ro.siit.java10.evproject.service.UserService;
 import ro.siit.java10.evproject.service.UserServiceImp;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
+//@Controller
+@RequestMapping
 public class UserController {
 
     @Autowired
-    private UserService userService;
+    private UserServiceImp userServiceImp;
 
-
-    @RequestMapping(value = "/user", method = RequestMethod.GET)
-    public String listUsers(Model model, HttpServletRequest request) {
-        List<User> users = userService.getAll();
-        model.addAttribute("user", users);
-        model.addAttribute("createClientRequest", new CreateUserReguest());
-
-        return "listUsers";
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
+    public List<User> listUsers() {
+        return userServiceImp.getAll();
     }
 
-    @RequestMapping(value = "/user", method = RequestMethod.POST)
-    public String createUser(CreateUserReguest userReguest, Model model) {
-        User users = getUser(userReguest);
-        userService.createUser(users);
-
-        return "redirect:/user";
-    }
-
-    @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
-    public String getUser(@PathVariable long id, Model model) {
-        User users = userService.getById(id);
-        model.addAttribute("updateUserRequest", getUserRequest(users));
-        model.addAttribute("user_id", id);
-        return "updateUser";
-    }
-
-
-    @RequestMapping(value = "/user/update/{id}", method = RequestMethod.POST)
-    public String updateUser(CreateUserReguest userReguest, @PathVariable long id) {
-
-        User user = getUser(userReguest);
-        userService.updateUser(user,id);
-
-        return "redirect:/user";
-    }
-
-    @RequestMapping(value = "/user/delete/{id}", method = RequestMethod.POST)
-    public String removeUser(@PathVariable long id, Model model) {
-
-        userService.removeUser(id);
-
-        return "redirect:/user";
-    }
-
-    private User getUser(CreateUserReguest userReguest) {
-
-        User user = new User();
-        user.setFirstName(userReguest.getFirstName());
-        user.setLastName(userReguest.getLastName());
-        user.setCustomerEmailAddress(userReguest.getCustomerEmailAddress());
-        user.setCustomerFunds(userReguest.getCustomerFunds());
-//        user.setPhoneNumber(clientRequest.getPhoneNumber());
-
-
-
+    @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
+    public User getUser(@PathVariable long id) {
+        User user = userServiceImp.getById(id);
         return user;
     }
 
-    private CreateUserReguest getUserRequest(User user) {
-        CreateUserReguest createUserReguest = new CreateUserReguest();
-
-        createUserReguest.setFirstName(user.getFirstName());
-        createUserReguest.setLastName(user.getLastName());
-        createUserReguest.setCustomerEmailAddress(user.getCustomerEmailAddress());
-        createUserReguest.setCustomerFunds(user.getCustomerFunds());
+//    @RequestMapping(value = "/user/findByLastName}", method = RequestMethod.GET)
+//    public Optional<User> findByLastName(@PathVariable String lastName) {
+//        Optional<User> user = userServiceImp.findByLastname(lastName);
+//        return user;
+//    }
 
 
-        return createUserReguest;
+    @RequestMapping(value = "/users", method = RequestMethod.POST)
+    public User createUser(@RequestBody User user) {
+        User createdUser = userServiceImp.createUser(user);
+        return createdUser;
+    }
 
+    @RequestMapping(value = "/users/delete/{id}", method = RequestMethod.DELETE)
+    public String removeUser(@PathVariable long id) {
+        userServiceImp.removeUser(id);
+        return "deleted";
     }
 }

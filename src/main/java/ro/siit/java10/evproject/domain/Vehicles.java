@@ -1,57 +1,58 @@
 package ro.siit.java10.evproject.domain;
 
+import ro.siit.java10.evproject.domain.enumeration.FuelType;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "Vehicle")
+@Table(name = "Vehicles")
 
 public class Vehicles implements Serializable {
     private static final long serialVersionUID = 1L;
 
-        @Id
-        @Column(name="vincode")
-        private String vinCode;
+    @Id
+    @Column(name = "vincode")
+    private long vinCode;
 
-        @Column(name="manufacturer")
-        private String manufacturer;
+    @Column(name = "manufacturer")
+    private String manufacturer;
 
-        @Column(name="model")
-        private String model;
+    @Column(name = "model")
+    private String model;
 
-        @Column(name="firstreg")
-        private String firstReg;
+    @Column(name = "firstReg")
+    private String firstReg;
 
-        @Column(name="powerengine")
-        private String powerEngine;
+    @Column(name = "powerEngine")
+    private String powerEngine;
 
-        @Column(name = "isusedvehicle")
-        private boolean isUsedVehicle;
+    @Column(name = "isUsedVehicle")
+    private boolean isUsedVehicle;
 
-        @Column(name="rangepercharge")
-        private int rangePerCharge;
+    @Column(name = "rangePerCharge")
+    private int rangePerCharge;
 
-        @Column(name="isfastcharge")
-        private boolean fastCharging;
+    @Column(name = "fastCharging")
+    private boolean fastCharging;
 
-        @Column(name="fueltype")
-        private String fuelType;
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    @Column(name = "fuelType", nullable=false)
+    private FuelType fuelType;
 
-        @Column(name="price")
-        private int price;
+    @Column(name = "price")
+    private int price;
 
-//        @Column(name="dealership_name")
-//        private Dealership dealership;
+//    @Column(name="quantity")
+//    public int quantity;
 
-
-////        @ManyToMany
-//        private Dealership dealership_name;
-
-        public Vehicles(){
-
-    }
+    @ManyToOne
+    Dealership dealership;
 
     public String getManufacturer() {
         return manufacturer;
@@ -89,11 +90,11 @@ public class Vehicles implements Serializable {
         return this;
     }
 
-    public String getVinCode() {
+    public long getVinCode() {
         return vinCode;
     }
 
-    public Vehicles setVinCode(String vinCode) {
+    public Vehicles setVinCode(long vinCode) {
         this.vinCode = vinCode;
         return this;
     }
@@ -134,43 +135,53 @@ public class Vehicles implements Serializable {
         return this;
     }
 
-    public String getFuelType() {
+    public FuelType getFuelType() {
         return fuelType;
     }
 
-    public Vehicles setFuelType(String fuelType) {
+    public Vehicles setFuelType(FuelType fuelType) {
         this.fuelType = fuelType;
         return this;
     }
 
+    public Dealership getDealership() {
+        return dealership;
+    }
+
+    public Vehicles setDealership() {
+        this.dealership = dealership;
+        return this;
+    }
+
+    /**
+ *    in case vehicle with same specification, but uniquie vinCode
+ */
+//    public int getQuantity() {
+//        return quantity;
+//    }
+//
+//    public Vehicles setQuantity(int quantity) {
+//        this.quantity = quantity;
+//        return this;
+//    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Vehicles)) return false;
         Vehicles vehicles = (Vehicles) o;
-        return isUsedVehicle() == vehicles.isUsedVehicle() && getRangePerCharge() ==
-                vehicles.getRangePerCharge() && isFastCharging() == vehicles.isFastCharging() && getPrice() ==
-                vehicles.getPrice() && Objects.equals(getVinCode(), vehicles.getVinCode()) && Objects.equals(getManufacturer(),
-                vehicles.getManufacturer()) && Objects.equals(getModel(), vehicles.getModel()) && Objects.equals(getFirstReg(),
-                vehicles.getFirstReg()) && Objects.equals(getPowerEngine(), vehicles.getPowerEngine()) && Objects.equals(getFuelType(),
-                vehicles.getFuelType());
+        return isUsedVehicle() == vehicles.isUsedVehicle() && getRangePerCharge() == vehicles.getRangePerCharge() && isFastCharging() == vehicles.isFastCharging() && getPrice() == vehicles.getPrice() && Objects.equals(getVinCode(), vehicles.getVinCode()) && Objects.equals(getManufacturer(), vehicles.getManufacturer()) && Objects.equals(getModel(), vehicles.getModel()) && Objects.equals(getFirstReg(), vehicles.getFirstReg()) && Objects.equals(getPowerEngine(), vehicles.getPowerEngine()) && Objects.equals(getFuelType(), vehicles.getFuelType());
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(getVinCode(), getManufacturer(), getModel(), getFirstReg(), getPowerEngine(),
-                isUsedVehicle(), getRangePerCharge(), isFastCharging(), getFuelType(), getPrice());
+        return Objects.hash(getVinCode(), getManufacturer(), getModel(), getFirstReg(), getPowerEngine(), isUsedVehicle(), getRangePerCharge(), isFastCharging(), getFuelType(), getPrice());
     }
 
     @Override
     public String toString() {
-        return "Vehicles{" + "manufacturer='" + manufacturer + '\''
-                + ", model='" + model + '\'' + ", firstReg='" + firstReg + '\''
-                + ", powerEngine='" + powerEngine + '\'' + ", isUsedVehicle=" + isUsedVehicle
-                + ", rangePerCharge=" + rangePerCharge + ", fastCharging=" + fastCharging
-                + ", fuelType='" + fuelType + '\'' + ", vinCode='" + vinCode + '\'' + ", price=" + price + '}';
+        return "Vehicles{" + "manufacturer='" + manufacturer + '\'' + ", model='" + model + '\'' + ", firstReg='" + firstReg + '\'' + ", powerEngine='" + powerEngine + '\'' + ", isUsedVehicle=" + isUsedVehicle + ", rangePerCharge=" + rangePerCharge + ", fastCharging=" + fastCharging + ", fuelType='" + fuelType + '\'' + ", vinCode='" + vinCode + '\'' + ", price=" + price + '}';
     }
 
 

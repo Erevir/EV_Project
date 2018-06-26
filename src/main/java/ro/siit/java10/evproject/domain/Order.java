@@ -21,10 +21,10 @@ public class Order implements Serializable{
         private Long id;
 
         @Column(name = "date")
-        private LocalDate date;
+        private Date date;
 
         @Column(name = "total_price")
-        private int totalPrice;
+        private long totalPrice;
 
         @NotNull
         @Enumerated(EnumType.STRING)
@@ -60,29 +60,29 @@ public class Order implements Serializable{
         this.id = id;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public Order date(LocalDate date) {
+    public Order date(Date date) {
         this.date = date;
         return this;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    public int getTotalPrice() {
+    public long getTotalPrice() {
         return totalPrice;
     }
 
-    public Order totalPrice(int totalPrice) {
+    public Order totalPrice(long totalPrice) {
         this.totalPrice = totalPrice;
         return this;
     }
 
-    public void setTotalPrice(int totalPrice) {
+    public void setTotalPrice(long totalPrice) {
         this.totalPrice = totalPrice;
     }
 
@@ -215,11 +215,11 @@ public class Order implements Serializable{
     private void calculateTotalPrice() {
         totalPrice = 0;
         for (OrderItem item : orderItems) {
-            item.setPrice(item.getVehicles().getPrice()); // always use latest price
+            item.setPrice(item.getVehicles().getPrice());
             totalPrice = totalPrice + (item.getPrice() * item.getQuantity());
         }
         if (greenBonus != null) {
-            if (greenBonus.isValidToday() && totalPrice >= greenBonus.getAmount()) {
+            if (totalPrice >= greenBonus.getAmount()) {
                 totalPrice -= totalPrice - greenBonus.getAmount();
             } else {
                 greenBonus = null; // not valid anymore
