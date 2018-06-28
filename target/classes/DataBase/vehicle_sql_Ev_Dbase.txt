@@ -1,0 +1,12 @@
+INSERT INTO public.vehicles(
+	vincode, fast_charging, first_reg, fuel_type, is_used_vehicle, model, manufacturer, power_engine, range_per_charge, price, dealership_id)
+	VALUES (45685217,TRUE,'14.03.2018','ELECTRIC',FALSE,'Leaf','Nissan',150,60,33900,8),
+(46565821,FALSE,'21.05.2012','GASOLINE',TRUE,'Golf','Volkswagen',102,0,7500,1),
+(79956985,FALSE,'16.05.2018','GASOLINE',FALSE,'Q5','Audi','140',0,58900,4),
+(98565465,FALSE,'05.05.2013','ELECTRIC',TRUE,'Zoe','Renault',91,480,12500,1),
+(54698652,FALSE,'12.08.2012','HYBRID',TRUE,'Prius','Toyota',122,0,14500,3),
+(65689566,TRUE,'28.04.2018','ELECTRIC',FALSE,'I3','BMW',94,90,41760,4),
+(98565237,FALSE,'16.07.2016','DIESEL',TRUE,'SX60','Volvo',235,0,35800,5),
+(32584512,TRUE,'01.05.2018','ELECTRIC',FALSE,'S','Tesla',423,120,87055,6),
+(96585235,TRUE,'28.04.2018','ELECTRIC',FALSE,'Fiesta','Ford',107,45,27100,7),
+(59684228,FALSE,'17.09.2014','DIESEL',TRUE,'508','Peugeot',170,0,8250,1);

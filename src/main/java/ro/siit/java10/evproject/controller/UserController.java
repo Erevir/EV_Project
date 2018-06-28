@@ -4,10 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import ro.siit.java10.evproject.domain.User;
+import ro.siit.java10.evproject.service.DealershipServiceImp;
 import ro.siit.java10.evproject.service.UserServiceImp;
 
 import java.util.List;
 import java.util.Optional;
+
+/**
+ * REST controller for managing User.
+ */
 
 @RestController
 //@Controller
@@ -16,6 +21,8 @@ public class UserController {
 
     @Autowired
     private UserServiceImp userServiceImp;
+    private DealershipServiceImp dealershipServiceImp;
+
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
     public List<User> listUsers() {

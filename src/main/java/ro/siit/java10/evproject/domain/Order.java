@@ -5,52 +5,47 @@ import ro.siit.java10.evproject.domain.enumeration.OrderStatus;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+
+/**
+ * A Order Entity.
+ */
 
 @Entity
 @Table(name = "sales_order")
 public class Order implements Serializable{
     private static final long serialVersionUID = 1L;
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.AUTO)
-        private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-        @Column(name = "date")
-        private Date date;
+    @Column(name = "date")
+    private Date date;
 
-        @Column(name = "total_price")
-        private long totalPrice;
+    @Column(name = "total_price")
+    private long totalPrice;
 
-        @NotNull
-        @Enumerated(EnumType.STRING)
-        @Column(name = "status", nullable = false)
-        private OrderStatus status;
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status", nullable = false)
+    private OrderStatus status;
 
-        @Column(name = "payment_info")
-        private String paymentInfo;
+    @Column(name = "payment_info")
+    private String paymentInfo;
 
-        @ManyToOne
-        @NotNull
-        private User user;
+    @ManyToOne
+    @NotNull
+    private User user;
 
-//        @OneToOne
-//        @NotNull
-//        private Vehicles vehicles;
-//
-//        @OneToOne
-//        @NotNull
-//        private Dealership dealership;
+    @OneToOne
+    private GreenBonus greenBonus;
 
-        @OneToOne
-        private GreenBonus greenBonus;
-
-        @OneToMany(fetch = FetchType.EAGER, mappedBy = "order", cascade = CascadeType.ALL)
-        private Set<OrderItem> orderItems = new HashSet<>();
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "order", cascade = CascadeType.ALL)
+    private Set<OrderItem> orderItems = new HashSet<>();
 
     public Long getId() {
         return id;

@@ -6,6 +6,9 @@ import ro.siit.java10.evproject.domain.Order;
 
 import javax.transaction.Transactional;
 
+/**
+ * Spring Data JPA repository for the Order entity.
+ */
 
 @Repository
 @Transactional

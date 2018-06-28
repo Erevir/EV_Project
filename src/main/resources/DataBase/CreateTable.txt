@@ -1,0 +1,38 @@
+CREATE TABLE dealership
+(
+    id bigint NOT NULL,
+    dealership_address character varying(255),
+    dealership_email_address character varying(255),
+    dealership_name character varying(255),
+    CONSTRAINT dealership_pkey PRIMARY KEY (id)
+)
+
+CREATE TABLE customer
+(
+    id bigint NOT NULL,
+    customer_email_address character varying(255),
+    customer_funds integer,
+    first_name character varying(255),
+    last_name character varying(255),
+    CONSTRAINT customer_pkey PRIMARY KEY (id)
+)
+
+CREATE TABLE vehicles
+(
+    vincode bigint NOT NULL,
+    fast_charging boolean,
+    first_reg character varying(255),
+    fuel_type character varying(255) NOT NULL,
+    is_used_vehicle boolean,
+    manufacturer character varying(255),
+    model character varying(255),
+    power_engine character varying(255),
+    price integer,
+    range_per_charge integer,
+    dealership_id bigint,
+    CONSTRAINT vehicles_pkey PRIMARY KEY (vincode),
+    CONSTRAINT fkgwev8hcd6kjxi7tbrmtwsoi2a FOREIGN KEY (dealership_id)
+        REFERENCES dealership (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)

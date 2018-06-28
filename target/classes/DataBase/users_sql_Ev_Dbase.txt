@@ -1,0 +1,13 @@
+INSERT INTO public.customer(
+	id, customer_email_address, customer_funds, first_name, last_name)
+	
+	VALUES (1,'ghr@gmail.com',152695,'Gheorghe','Dan'),
+
+(2,'5465@gmail.com',29850,'Mara','Si'
+),
+(3,'dfs5@gmail.com',15820,'Aurel','Ghimpu'
+),
+(4,'656da@gmail.com',52600,'Ionel','Abrudan'
+),
+(5,'lki25@gmail.com',45260,'Matei','Arapu'
+);

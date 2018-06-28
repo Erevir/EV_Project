@@ -2,76 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441e5792-2f63-415d-8d54-7dd187cca05d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/exceptions/NotFoundException.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_cache_cache_api_1_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/EV_Project.iml" afterPath="$PROJECT_DIR$/EV_Project.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Application.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Application.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/config/AppConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/GreenBonusDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/GreenBonusDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderControler.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/UserController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/DealershipDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/GreenBonusDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/GreenBonusDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/OrderDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/OrderItemDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/VehicleDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateVehiclesReguest.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateVehiclesReguest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateUserReguest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateVehiclesReguest.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusImp.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/WebContent/InterfaceHTML.html" afterPath="$PROJECT_DIR$/src/main/resources/static/templates/InterfaceHTML.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/WebContent/product.html" afterPath="$PROJECT_DIR$/src/main/resources/static/templates/product.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listUsers.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vehicles.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html" />
-      <change beforePath="$PROJECT_DIR$/target/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WebContent/InterfaceHTML.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WebContent/product.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Application.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Application.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/DealershipController.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/DealershipController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/OrderControler.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/OrderControler.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/UserController.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/VehicleController.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/VehicleController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/dao_Repository/DealershipDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/dao_Repository/GreenBonusDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/dao_Repository/OrderDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/dao_Repository/OrderItemDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/dao_Repository/UserDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/dao_Repository/VehicleDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Dealership.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Dealership.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/GreenBonus.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/GreenBonus.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Order.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Order.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/OrderItem.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/OrderItem.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/User.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/User.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Vehicles.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Vehicles.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/dto/CreateVehiclesReguest.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/dto/CreateVehiclesReguest.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/DealershipService.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/DealershipService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/DealershipServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/DealershipServiceImp.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusImp.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusImp.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusImp.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusService.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderService.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderService.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderServiceImp.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/UserServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/UserServiceImp.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehicleServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehicleServiceImp.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehiclesService.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehiclesService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/listUsers.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/vehicles.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users.html" afterPath="$PROJECT_DIR$/target/classes/templates/users.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/vehiclesNew.html" afterPath="$PROJECT_DIR$/target/classes/templates/vehiclesNew.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,58 +68,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Dealership.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java">
+      <file leaf-file-name="OrderDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1143#1144#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
-                <element signature="e#1388#1389#0" expanded="true" />
-                <element signature="e#2508#2509#0" expanded="true" />
-                <element signature="e#2539#2540#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vehicles.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java">
+      <file leaf-file-name="OrderItemDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3124#3125#0" expanded="true" />
-                <element signature="e#3157#3158#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/users.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-263">
-              <caret line="64" column="46" lean-forward="true" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -143,8 +95,8 @@
       <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="264">
+              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,35 +104,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java">
+      <file leaf-file-name="VehicleDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java">
+      <file leaf-file-name="GreenBonusController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/GreenBonusController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-95">
+              <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java">
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-93">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="577">
+              <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,25 +136,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java">
+      <file leaf-file-name="OrderServiceImp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="223">
+              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#1264#1265#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/UserController.java">
+      <file leaf-file-name="DealershipService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderItemService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderItemServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -217,9 +186,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -229,6 +198,7 @@
       <find>jdbc</find>
       <find>localhost</find>
       <find>hik</find>
+      <find>error</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,57 +212,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/hikari.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/config/AppConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao/VehicleDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao/VehicleDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Vehicles.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateUserReguest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/vehicles.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/WebContent/InterfaceHTML.txt" />
-        <option value="$PROJECT_DIR$/src/main/resources/WebContent/InterfaceHTML.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/DealershipDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/GreenBonusDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/OrderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/OrderItemDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/VehicleDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusImp.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/WebContent/product.html" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/exceptions/NotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateVehiclesReguest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/listUsers.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusImp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/users.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/WebContent/InterfaceHTML.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/WebContent/product.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/templates/product.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/templates/InterfaceHTML.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderControler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/GreenBonusController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/GreenBonusDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java" />
       </list>
     </option>
   </component>
@@ -302,7 +272,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="340" />
     <option name="y" value="-10" />
     <option name="width" value="1195" />
@@ -324,9 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -395,15 +363,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="evproject" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EV_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evproject" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -428,12 +387,70 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EV_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EV_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 9.0 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 9.0 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 9.0 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 9.0 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 9.0 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="function" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -446,18 +463,20 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ro.siit.java10.evproject.exceptions" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources\static\templates" />
+      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources\static\images" />
+      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources\WebContent" />
+      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources\static\css" />
       <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources\WebContent\lib" />
+      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources\DataBase" />
+      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources\WebContent" />
       <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources" />
-      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources\templates" />
-      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\target" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Victor\IdeaProjects\EV_Project\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ro.siit.java10.evproject.exceptions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -596,7 +615,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -612,7 +631,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24865736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -646,10 +665,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35600907" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35600907" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24865736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -667,570 +686,119 @@
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusImp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DataBase/CreateTable.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="432">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DataBase/dealership_sql_Ev_Dbase.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DataBase/users_sql_Ev_Dbase.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DataBase/vehicle_sql_Ev_Dbase.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.4/jackson-databind-2.9.4-sources.jar!/com/fasterxml/jackson/databind/ser/BeanPropertyWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="726" column="0" lean-forward="false" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.5.RELEASE/spring-data-commons-2.0.5.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WebContent/product.html">
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="47" column="7" lean-forward="false" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        <state relative-caret-position="2010">
+          <caret line="501" column="17" lean-forward="false" selection-start-line="501" selection-start-column="17" selection-end-line="501" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WebContent/InterfaceHTML.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class">
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
-          <caret line="160" column="13" lean-forward="false" selection-start-line="160" selection-start-column="13" selection-end-line="160" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.5.RELEASE/spring-data-commons-2.0.5.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.4.RELEASE/spring-tx-5.0.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-          <folding>
-            <marker date="1528385859498" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528385859498" expanded="false" signature="167:1360" ph="..." />
-            <marker date="1528385859498" expanded="true" signature="2202:2209" ph="{}" />
-            <marker date="1528385859498" expanded="true" signature="2342:2435" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="2530:2857" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="2950:3027" ph="{...}" />
-            <marker date="1528385859498" expanded="false" signature="3101:3112" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="3151:3157" ph=" }" />
-            <marker date="1528385859498" expanded="true" signature="3254:3315" ph="{...}" />
-            <marker date="1528385859498" expanded="false" signature="3392:3403" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="3434:3440" ph=" }" />
-            <marker date="1528385859498" expanded="true" signature="3517:3714" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="3822:3941" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="4054:4131" ph="{...}" />
-            <marker date="1528385859498" expanded="false" signature="4216:4227" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="4266:4272" ph=" }" />
-            <marker date="1528385859498" expanded="false" signature="4339:4350" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="4381:4387" ph=" }" />
-            <marker date="1528385859498" expanded="false" signature="4451:4462" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="4486:4492" ph=" }" />
-            <marker date="1528385859498" expanded="true" signature="4531:5068" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="5249:8492" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="5979:6948" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="8544:8630" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="8754:10044" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="10165:10596" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="10724:11240" ph="{...}" />
-            <marker date="1528385859498" expanded="false" signature="11344:11355" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="11367:11373" ph=" }" />
-            <marker date="1528385859498" expanded="true" signature="11577:12415" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="11747:11874" ph="{...}" />
-            <marker date="1528385859498" expanded="false" signature="11788:11811" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="11842:11860" ph=" }" />
-            <marker date="1528385859498" expanded="true" signature="12643:13296" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="13408:13753" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="13880:15438" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="15541:15636" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="15713:15916" ph="{...}" />
-            <marker date="1528385859498" expanded="false" signature="15775:15790" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="15807:15817" ph=" }" />
-            <marker date="1528385859498" expanded="false" signature="15851:15866" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="15900:15910" ph=" }" />
-            <marker date="1528385859498" expanded="true" signature="15959:16067" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="16050:16061" ph="{}" />
-            <marker date="1528385859498" expanded="true" signature="16137:16201" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="16245:18417" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="16811:17010" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="17078:17229" ph="{...}" />
-            <marker date="1528385859498" expanded="false" signature="17310:17325" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="17358:17368" ph=" }" />
-            <marker date="1528385859498" expanded="false" signature="17420:17435" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="17471:17481" ph=" }" />
-            <marker date="1528385859498" expanded="false" signature="17559:17574" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="17606:17616" ph=" }" />
-            <marker date="1528385859498" expanded="false" signature="17691:17706" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="17736:17746" ph=" }" />
-            <marker date="1528385859498" expanded="false" signature="17787:17802" ph=" { " />
-            <marker date="1528385859498" expanded="false" signature="17840:17850" ph=" }" />
-            <marker date="1528385859498" expanded="true" signature="17888:18103" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="18153:18253" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="18288:18411" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.4.RELEASE/spring-tx-5.0.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <marker date="1528385859498" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528385859498" expanded="false" signature="167:758" ph="..." />
-            <marker date="1528385859498" expanded="true" signature="910:917" ph="{}" />
-            <marker date="1528385859498" expanded="true" signature="1008:1107" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="1207:1304" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="1391:1684" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="1758:2028" ph="{...}" />
-            <marker date="1528385859498" expanded="true" signature="2124:2466" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <marker date="1528385872303" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528385872303" expanded="false" signature="157:598" ph="..." />
-            <marker date="1528385872303" expanded="true" signature="1291:1641" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="1677:1688" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="1706:1712" ph=" }" />
-            <marker date="1528385872303" expanded="false" signature="1761:1772" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="1791:1797" ph=" }" />
-            <marker date="1528385872303" expanded="false" signature="1848:1859" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="1878:1884" ph=" }" />
-            <marker date="1528385872303" expanded="false" signature="1921:1932" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="1951:1957" ph=" }" />
-            <marker date="1528385872303" expanded="false" signature="1999:2010" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="2032:2038" ph=" }" />
-            <marker date="1528385872303" expanded="false" signature="2089:2100" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="2127:2133" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="2194:2993" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="3065:3170" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="3217:3533" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="3599:4063" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="4134:4440" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="4503:4592" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="4645:4791" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="4822:5186" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="505" column="0" lean-forward="false" selection-start-line="505" selection-start-column="0" selection-end-line="505" selection-end-column="0" />
-          <folding>
-            <marker date="1528385872303" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528385872303" expanded="false" signature="157:1817" ph="..." />
-            <marker date="1528385872303" expanded="true" signature="2829:3254" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="3374:4022" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="4052:4063" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="4103:4109" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="4173:6805" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="6897:7169" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="7210:7221" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="7243:7249" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="7359:7812" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="7933:9496" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="9571:11958" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="12000:12148" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="12175:12186" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="12273:12279" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="12363:12675" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="12819:13335" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="13442:14823" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="13604:13714" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="13783:14817" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="14896:22008" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="15188:15361" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="15404:18895" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="18941:20803" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="20871:20955" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="21019:21216" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="21248:22002" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="22092:22836" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="22405:22638" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="22700:22830" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="22932:25134" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="23045:23060" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="23083:23093" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="23231:24809" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="24855:25041" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="25072:25087" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="25118:25128" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="25238:26159" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="25538:25671" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="25809:26153" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="26249:26624" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="26356:26371" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="26394:26404" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="26507:26618" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="26712:27611" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="26817:26832" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="26855:26865" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="26968:27605" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="27692:27949" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="27797:27812" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="27835:27845" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="27899:27943" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="28029:28287" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="28137:28152" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="28173:28183" ph=" }" />
-            <marker date="1528385872303" expanded="false" signature="28237:28252" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="28271:28281" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="28392:29323" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="28520:28535" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="28568:28578" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="28716:29317" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="29421:30193" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="29542:29557" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="29590:29600" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="29738:30187" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="30297:31052" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="30428:30443" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="30464:30474" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="30612:31046" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="31149:31629" ph="{...}" />
-            <marker date="1528385872303" expanded="false" signature="31273:31288" ph=" { " />
-            <marker date="1528385872303" expanded="false" signature="31309:31319" ph=" }" />
-            <marker date="1528385872303" expanded="true" signature="31457:31623" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="31702:31755" ph="{...}" />
-            <marker date="1528385872303" expanded="true" signature="31738:31749" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <marker date="1528385875889" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528385875889" expanded="false" signature="155:629" ph="..." />
-            <marker date="1528385875889" expanded="true" signature="972:1209" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="1235:1910" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="1987:2257" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="2285:2292" ph="{}" />
-            <marker date="1528385875889" expanded="false" signature="2329:2340" ph=" { " />
-            <marker date="1528385875889" expanded="false" signature="2357:2363" ph=" }" />
-            <marker date="1528385875889" expanded="false" signature="2397:2408" ph=" { " />
-            <marker date="1528385875889" expanded="false" signature="2435:2441" ph=" }" />
-            <marker date="1528385875889" expanded="true" signature="2474:2540" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="2571:2637" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="2673:2739" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="2803:3367" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="3438:3951" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="4027:4296" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="4334:4924" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="4519:4918" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="4965:5093" ph="{...}" />
-            <marker date="1528385875889" expanded="true" signature="5076:5087" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/GeneratedValue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <marker date="1528385879165" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528385879165" expanded="false" signature="141:294" ph="..." />
-            <marker date="1528385879165" expanded="true" signature="296:380" ph="@{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.4.RELEASE/spring-tx-5.0.4.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.4.RELEASE/spring-tx-5.0.4.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/GeneratedValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="149" column="8" lean-forward="false" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="95" column="6" lean-forward="false" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
+        <state relative-caret-position="456">
+          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE-sources.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/exceptions/NotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#324#325#0" expanded="false" />
-            <element signature="e#356#357#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="33" column="85" lean-forward="false" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#877#878#0" expanded="false" />
-            <element signature="e#910#911#0" expanded="false" />
-            <element signature="e#948#949#0" expanded="false" />
-            <element signature="e#984#985#0" expanded="false" />
-            <element signature="e#1017#1018#0" expanded="false" />
-            <element signature="e#1053#1054#0" expanded="false" />
-            <element signature="e#1096#1097#0" expanded="false" />
-            <element signature="e#1138#1139#0" expanded="false" />
-            <element signature="e#1178#1179#0" expanded="false" />
-            <element signature="e#1217#1218#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-            <element signature="e#1318#1319#0" expanded="false" />
-            <element signature="e#1591#1592#0" expanded="false" />
-            <element signature="e#1630#1631#0" expanded="false" />
-            <element signature="e#2175#2176#0" expanded="false" />
-            <element signature="e#2217#2218#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/GreenBonusDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateVehiclesReguest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1704">
-          <caret line="87" column="15" lean-forward="false" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="26" column="56" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="e#1642#1643#0" expanded="false" />
-            <element signature="e#1674#1675#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="122" column="58" lean-forward="true" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1251#1252#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2057#2058#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="92" column="71" lean-forward="true" selection-start-line="92" selection-start-column="71" selection-end-line="92" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="385">
+          <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-398">
+          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/imagesEV.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/templates/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/templates/InterfaceHTML.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
@@ -1238,96 +806,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        <state relative-caret-position="1032">
+          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#2508#2509#0" expanded="true" />
-            <element signature="e#2539#2540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3124#3125#0" expanded="true" />
-            <element signature="e#3157#3158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
-          <caret line="64" column="46" lean-forward="true" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+        <state relative-caret-position="480">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/pagestyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="432">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="464">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#651#652#0" expanded="true" />
@@ -1336,11 +864,284 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#923#924#0" expanded="false" />
+            <element signature="e#968#969#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-839">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/exceptions/NotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="62" column="2" lean-forward="true" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="102" column="59" lean-forward="true" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#873#874#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/GreenBonusDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/GreenBonusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1264#1265#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

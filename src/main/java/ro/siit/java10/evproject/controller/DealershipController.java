@@ -4,8 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ro.siit.java10.evproject.domain.Dealership;
 import ro.siit.java10.evproject.service.DealershipServiceImp;
+import ro.siit.java10.evproject.service.UserServiceImp;
+import ro.siit.java10.evproject.service.VehicleServiceImp;
 
 import java.util.List;
+
+/**
+ * REST controller for managing Dealership.
+ */
 
 @RestController
 @RequestMapping
@@ -13,6 +19,8 @@ public class DealershipController {
 
     @Autowired
     private DealershipServiceImp dealershipServiceImp;
+    private UserServiceImp userServiceImp;
+    private VehicleServiceImp vehicleServiceImp;
 
     @RequestMapping(value = "/dealerships/all", method = RequestMethod.GET)
     public List<Dealership> listDealership() {
