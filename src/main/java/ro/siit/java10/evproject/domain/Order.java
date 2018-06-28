@@ -198,13 +198,8 @@ public class Order implements Serializable{
     }
 
     public boolean approveOrder() {
-        if (paymentInfo != null && status == OrderStatus.PENDING)
-            status = OrderStatus.PAID;
+        if (paymentInfo != null && status == OrderStatus.PENDING) status = OrderStatus.PAID;
         return status == OrderStatus.PAID;
-    }
-
-    public void rejectOrder() {
-        if (status == OrderStatus.PENDING) status = OrderStatus.CANCELLED;
     }
 
     private void calculateTotalPrice() {
@@ -254,9 +249,4 @@ public class Order implements Serializable{
                 '}';
     }
 
-
-//    public void submitted() {
-//        // TODO Auto-generated method stub
-//        date = LocalDate.now();
-//    }
 }

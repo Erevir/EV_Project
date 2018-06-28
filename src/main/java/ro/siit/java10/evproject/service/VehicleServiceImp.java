@@ -13,7 +13,6 @@ import javax.transaction.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
 @Service
 @Transactional
 public class VehicleServiceImp implements VehiclesService {
@@ -30,7 +29,6 @@ public class VehicleServiceImp implements VehiclesService {
 
     @Override
     public List<Vehicles> getAllVehicles() {
-
         return vehicleDAO.findAll();
     }
 
@@ -43,7 +41,6 @@ public class VehicleServiceImp implements VehiclesService {
 
     @Override
     public Vehicles createVehicles(Vehicles vehicleToCreate) {
-
 //        Optional<Dealership> dealership = dealershipDAO.findById(vehicleToCreate.getDealership().getId());
 //        if (!dealership.isPresent()) {
 //            throw new NotFoundException("Can not create Vehicle, dealership is invalid: " +
