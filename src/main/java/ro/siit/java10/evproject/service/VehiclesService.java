@@ -15,11 +15,20 @@ public interface VehiclesService {
 
     public Vehicles getById(Long vinCode);
 
-//    Vehicles createVehicles(Vehicles vehicles);
+    Vehicles createVehicles(Vehicles vehicles);
 
     //public void updateVehicles(Vehicles vehicles, String vinCode);
 
     void deleteVehicles(Long vinCode);
 
+    List<Vehicles> getVehiclesSortedByPrice();
+
+    List<Vehicles> getElectricVehicles();
+
+    List<Vehicles> getVehiclesSortedByRangePerCharge();
+
+    List<Vehicles> getVehiclesSortedByPowerEngine();
+
+    List<Vehicles> getFastChargingVehiclesInStock();
 
     }

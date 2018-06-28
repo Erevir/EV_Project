@@ -1,0 +1,17 @@
+INSERT INTO public.dealership(
+	dealership_name,dealership_address,dealership_email_address,id)
+	VALUES ('Compexit','Calea Turzii 223,Cluj-Napoca 400495','contact@autorulate.ro',1),
+
+('AutoWorld','Calea Turzii 249, Cluj-Napoca 400495','sales@autoworld.ro',2
+),
+('ToyotaCluj','Calea Turzii 176-178, Cluj-Napoca 400495','vanzari@cluj.toyota.ro',3
+),
+('AutoTransilvania','E60 396-398, Floresti 407280','sales@autotransilvania.ro',4
+),
+('Premium Cars','Str. Avram Iancu 402, Floresti 407280','sales@premiumcars.ro',5
+),
+('TeslaEU','Asteriastraat 1-7, 5047 RM, Tilburg, Netherlands','eupress@tesla.com',6
+),
+('RMB InterAuto','Sannicoara, Str. Clujului 15','office@inter-auto.ro',7),                                                                                              
+('NissanRomania','Calea Turzii 253-255, Cluj-Napoca 400000','calitate@otcgroup.ro',8
+);

@@ -9,8 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * A Vehicles Entity.
+ */
+
 @Entity
-@Table(name = "Vehicles")
+@Table(name = "vehicles")
 
 public class Vehicles implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -48,8 +52,11 @@ public class Vehicles implements Serializable {
     @Column(name = "price")
     private int price;
 
-//    @Column(name="quantity")
+//    @Column(name="quantity")   vehicles with the same specifications, but uniquie vinCode
 //    public int quantity;
+//    @Column(name="Specifications")
+//    public int specifications;
+
 
     @ManyToOne
     Dealership dealership;
@@ -144,11 +151,10 @@ public class Vehicles implements Serializable {
         return this;
     }
 
-    public Dealership getDealership() {
-        return dealership;
-    }
+    public  Dealership getDealership() {
+        return dealership;  }
 
-    public Vehicles setDealership() {
+    public Vehicles setDealership(Dealership dealership) {
         this.dealership = dealership;
         return this;
     }

@@ -8,6 +8,7 @@ import ro.siit.java10.evproject.domain.GreenBonus;
 import ro.siit.java10.evproject.domain.Order;
 import ro.siit.java10.evproject.domain.OrderItem;
 import ro.siit.java10.evproject.domain.Vehicles;
+import ro.siit.java10.evproject.domain.enumeration.FuelType;
 import ro.siit.java10.evproject.domain.enumeration.OrderStatus;
 import ro.siit.java10.evproject.exceptions.NotFoundException;
 
@@ -29,18 +30,10 @@ public class OrderServiceImp implements OrderService {
     private UserDao userDao;
     private DealershipDAO dealershipDAO;
     private GreenBonusDAO greenBonusDAO;
+    private OrderItem orderItem;
 
 
     List<Order>orders = new ArrayList<>();
-
-//    public OrderServiceImp(OrderItemDAO orderItemDAO, VehicleDAO vehicleDAO, UserDao userDao,
-//                           DealershipDAO dealershipDAO, GreenBonusDAO greenBonusDAO) {
-//        this.orderItemDAO = orderItemDAO;
-//        this.vehicleDAO = vehicleDAO;
-//        this.userDao = userDao;
-//        this.dealershipDAO = dealershipDAO;
-//        this.greenBonusDAO = greenBonusDAO;
-//    }
 
     @Override
     public List<Order> getAll() {
@@ -67,6 +60,10 @@ public class OrderServiceImp implements OrderService {
         orderDAO.deleteById(id);
     }
 
+
+//        public boolean isValid(){
+//        return (orderItem.getVehicles().getFuelType()== FuelType.ELECTRIC & orderItem.getVehicles().isUsedVehicle());}
+
     public Order submitOrder(Order order) {
 
             for (OrderItem item : order.getOrderItems()) {
@@ -80,26 +77,24 @@ public class OrderServiceImp implements OrderService {
                  */
 //                if (vehicles.getQuantity() < item.getQuantity()) return null;
 //                item.setVehicles(vehicles.quantity(vehicles.getQuantity() - item.getQuantity()));
+                if (order.getTotalPrice()>order.getUser().getCustomerFunds())throw new NotFoundException("User with does not have enough to buy the vehicle");
                 order.setTotalPrice(order.getTotalPrice() + (vehicles.getPrice() * item.getQuantity()));
                 vehicleDAO.save(vehicles);
             }
-
             if (order.getGreenBonus() != null) {
                 GreenBonus greenBonus = greenBonusDAO.getOne(order.getGreenBonus().getId());
-//                if (!greenBonus.isValid(order.getTotalPrice())) return null; TODO
+//                if (!greenBonus.isValid()) return null;
                 greenBonus.useBonus();
                 order.setGreenBonus(greenBonusDAO.save(greenBonus));
                 long normalPrice = order.getTotalPrice();
                 long totalPrice = normalPrice - greenBonus.getAmount();
                 order.setTotalPrice(totalPrice);
             }
-
             return orderDAO.save(order.date(order.getDate()).status(OrderStatus.PENDING));
-
         }
 
         public Order rejectOrder(Order order) {
-            // return vehicles and bonus qty
+            // return vehicles and bonus quantity
             for (OrderItem item : order.getOrderItems()) {
                 Vehicles vehicles = vehicleDAO.getOne(item.getVehicles().getVinCode());
 //                vehicles.addQuantity(item.getQuantity());

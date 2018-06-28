@@ -2,6 +2,11 @@ package ro.siit.java10.evproject.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
+
+/**
+ * A User Entity.
+ */
 
 @Entity
 @Table(name = "Customer")
@@ -25,20 +30,6 @@ public class User implements Serializable{
 
     @Column(name="customerFunds")
     private int customerFunds;
-
-
-//    public User (){
-//
-//    }
-//    public User(long id, String firstName, String lastName, String customerEmailAddress, int customerFunds) {
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.customerEmailAddress = customerEmailAddress;
-//        this.id = id;
-//        this.customerFunds = customerFunds;
-//
-//    }
-
 
     public long getId() {
         return id;
@@ -83,6 +74,20 @@ public class User implements Serializable{
     public User setCustomerFunds(int customerFunds) {
         this.customerFunds = customerFunds;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return getId() == user.getId() && getCustomerFunds() == user.getCustomerFunds() && Objects.equals(getFirstName(), user.getFirstName()) && Objects.equals(getLastName(), user.getLastName()) && Objects.equals(getCustomerEmailAddress(), user.getCustomerEmailAddress());
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(getId(), getFirstName(), getLastName(), getCustomerEmailAddress(), getCustomerFunds());
     }
 
     @Override

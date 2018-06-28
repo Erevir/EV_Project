@@ -1,28 +1,69 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Lista clientilor</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../static/css/pagestyle.css"
+          th:href="@{/css/pagestyle.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
-<p th:text="'List of clients'" />
-
-
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head lang="en">
-
-    <title>List vehicles</title>
-
-    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
-</head>
-<body>
+<p th:text="'List of vehicles'" />
 <div class="container">
     <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+    <form action="#" th:action="@{/vehicles}" th:object="${createVehiclesRequest}" method="post">
+        <div>
+            <label th:for="${vinCode}">Vehicles vinCode</label>
+            <input type="text" id="vinCode" name="vinCode" th:value="*{vinCode}"/>
+        </div>
+        <div>
+            <label th:for="${manufacturer}">Vehicles Manufacturer</label>
+            <input type="text" id="manufacturer" name="manufacturer" th:value="*{manufacturer}"/>
+        </div>
+        <div>
+            <label th:for="${model}">Vehicles Model</label>
+            <input type="text" id="model" name="model" th:value="*{model}"/>
+        </div>
+        <div>
+            <label th:for="${firstreg}">Vehicles FirstReg</label>
+            <input type="text" id="firstreg" name="firstreg" th:value="*{firstreg}"/>
+        </div>
+        <div>
+            <label th:for="${isusedvehicle}">Vehicles IsUsedVehicle</label>
+            <input type="text" id="isusedvehicle" name="isusedvehicle" th:value="*{isusedvehicle}"/>
+        </div>
+        <div>
+            <label th:for="${fueltype}">Vehicles FuelType</label>
+            <input type="text" id="fueltype" name="fueltype" th:value="*{fueltype}"/>
+        </div>
+        <div>
+            <label th:for="${powerengine}">Vehicles PowerEngine</label>
+            <input type="text" id="powerengine" name="powerengine" th:value="*{powerengine}"/>
+        </div>
+        <div>
+            <label th:for="${fastcharging}">Vehicles FastCharging</label>
+            <input type="text" id="fastcharging" name="fastcharging" th:value="*{fastcharging}"/>
+        </div>
+        <div>
+            <label th:for="${rangepercharge}">Vehicles RangePerCharge</label>
+            <input type="text" id="rangepercharge" name="rangepercharge" th:value="*{rangepercharge}"/>
+        </div>
+        <div>
+            <label th:for="${price}">Vehicles Price </label>
+            <input type="text" id="price" name="price" th:value="*{price}"/>
+        </div>
+        <div>
+            <label th:for="${dealershipname}">Vehicles Dealershipname</label>
+            <input type="text" id="dealershipname" name="dealershipname" th:value="*{dealershipname}"/>
+        </div>
+
+        <div>
+            <input type="submit" id="doUpdate" name="create vehicles" value="create vehicles"/>
+        </div>
+    </form>
     <div th:if="${not #lists.isEmpty(vehicles)}">
         <h2>Vehicle list</h2>
         <table class="table table-striped">
+            <!--<table {border: 1px solid grey;}></table>-->
             <tr>
                 <th>vinCode</th>
                 <th>Manufacturer</th>
@@ -36,8 +77,10 @@
                 <th>Price</th>
                 <th>DealerShipName</th>
             </tr>
+            </thead>
+            <tbody>
             <tr th:each="vehicle : ${vehicles}">
-                <td th:text="${vehicle.vinCode}"><a href="/product/${product.vinCode}">vinCode</a></td>
+                <td th:text="${vehicle.vinCode}"><a href="/vehicle/${vehicles.vinCode}">vinCode</a></td>
                 <td th:text="${vehicle.manufacturer}">Manufacturer</td>
                 <td th:text="${vehicle.model}">Model</td>
                 <td th:text="${vehicle.firstreg}">FirstReg</td>
@@ -49,10 +92,21 @@
                 <td th:text="${vehicle.price}">Price</td>
                 <td th:text="${vehicle.dealershipname}">DealerShipName</td>
 
+                <td>
+                    <form th:action="@{/vehicles/} + ${vehicles?.id} + '/'" th:object="${vehicles}" method="post">
+                        <input type="submit" value="Update"/>
+                    </form>
+                </td>
 
+                <td>
+                    <form th:action="@{/vehicles/delete/} + ${vehicles?.id} + '/'" th:object="${vehicles}" method="post">
+                        <input type="submit" value="Delete"/>
+                    </form>
+                </td>
             </tr>
+            <tbody>
+            </thead>
         </table>
-
     </div>
 </div>
 

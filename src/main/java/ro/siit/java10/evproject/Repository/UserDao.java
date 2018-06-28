@@ -8,6 +8,9 @@ import ro.siit.java10.evproject.domain.User;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Spring Data JPA repository for the User entity.
+ */
 
 @Repository
 public interface UserDao extends JpaRepository<User, Long> {

@@ -26,17 +26,12 @@
         <input type="text" id="customerFunds" name="customerFunds" th:value="*{customerFunds}" />
     </div>
 
-
     <div>
         <input type="submit" id="doUpdate" name="create user" value="create user"/>
     </div>
 </form>
-
 <br/>
 <br/>
-
-
-
 <table id="myTableId" dt:table="true">
     <thead>
     <tr>
@@ -56,7 +51,9 @@
         <td th:text="${user.id}"></td>
 
         <td>
-            <a th:href="@{/clients/} + ${client?.id} + '/'">Update</a>
+            <form th:action="@{/clients/} + ${client?.id} + '/'"th:object="${client}" method="post">
+                <input type="submit" value="Update"/>
+            </form>
         </td>
 
         <td>

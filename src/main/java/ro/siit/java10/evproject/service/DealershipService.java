@@ -1,9 +1,8 @@
 package ro.siit.java10.evproject.service;
 
-import org.springframework.data.domain.Page;
 import ro.siit.java10.evproject.domain.Dealership;
-
 import java.util.List;
+
 
 public interface DealershipService {
 
@@ -15,6 +14,7 @@ public interface DealershipService {
 
     Dealership findById(long id);
 
+//
 //    List<Dealership> findByName(String dealershipName);
 
 //    Page<Dealership> findByNameContaining(String dealershipName, Integer pageNumber);

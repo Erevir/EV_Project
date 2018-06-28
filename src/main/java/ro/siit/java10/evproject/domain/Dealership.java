@@ -5,6 +5,10 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * A Dealership Entity.
+ */
+
 @Entity
 @Table(name = "dealership")
 public class Dealership implements Serializable {

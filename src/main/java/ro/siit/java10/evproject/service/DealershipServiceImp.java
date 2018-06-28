@@ -53,9 +53,9 @@ public class DealershipServiceImp implements DealershipService {
 
 //    @Override
 //    public List<Dealership> findByName(String dealershipName) {
-//        List<Dealership> listDealership = dealershipDAO.findByName("%AutoTransilvania%");
+//        List<Dealership> listDealership = dealershipDAO.();
 //        return listDealership;
-//    }
+////    }
 
 //    @Override
 //    public Page<Dealership> findByNameContaining(String dealershipName, Integer pageNumber) {

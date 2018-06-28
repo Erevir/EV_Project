@@ -1,11 +1,13 @@
 package ro.siit.java10.evproject.domain;
 
-
 import javax.persistence.*;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
+
+/**
+ * A OrderItem Entity.
+ */
 
 @Entity
 @Table(name = "order_item")
@@ -99,42 +101,37 @@ public class OrderItem implements Serializable {
             this.order = order;
         }
 
-        public OrderItem merge(OrderItem orderItem) {
-            if (orderItem.getVehicles().getVinCode() == vehicles.getVinCode()) {
-                this.quantity += orderItem.getQuantity();
-                this.price = orderItem.getVehicles().getPrice();
-            }
-            return this;
-        }
+    public OrderItem merge(OrderItem orderItem) {
+        if (orderItem.getVehicles().getVinCode() == vehicles.getVinCode())  //same specification uniquie vinCode
+            this.quantity += orderItem.getQuantity();
+        this.price = orderItem.getVehicles().getPrice();
+        return this;
+    }
 
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) {
-                return true;
-            }
-            if (o == null || getClass() != o.getClass()) {
-                return false;
-            }
-            OrderItem orderItem = (OrderItem) o;
-            if(orderItem.id == null || id == null) {
-                return false;
-            }
-            return Objects.equals(id, orderItem.id);
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
         }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        OrderItem orderItem = (OrderItem) o;
+        if (orderItem.id == null || id == null) {
+            return false;
+        }
+        return Objects.equals(id, orderItem.id);
+    }
 
-        @Override
-        public int hashCode() {
-            return Objects.hashCode(id);
-        }
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
 
-        @Override
-        public String toString() {
-            return "OrderItem{" +
-                    "id=" + id +
-                    ", price='" + price + "'" +
-                    ", quantity='" + quantity + "'" +
-                    '}';
-        }
+    @Override
+    public String toString() {
+        return "OrderItem{" + "id=" + id + ", price='" + price + "'" + ", quantity='" + quantity + "'" + '}';
+    }
 
 
 }

@@ -1,23 +1,26 @@
 package ro.siit.java10.evproject.domain;
 
-
 import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+
+/**
+ * A GreenBonus Entity.
+ */
 
 @Entity
 @Table(name = "GreenBonus")
 public class GreenBonus implements Serializable {
 
-        private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-        @Id
-        @GeneratedValue //(strategy = GenerationType.AUTO)
-        private Long id;  // ID for Program discount or bonus programmes
+    @Id
+    @GeneratedValue //(strategy = GenerationType.AUTO)
+    private Long id;  // ID for Bonus programmes
+
+    @Column(name = "bonusName")
+    private String bonusName;
 
 //        @NotNull
 //        @Column(name = "start_date", nullable = false)
@@ -40,10 +43,6 @@ public class GreenBonus implements Serializable {
 //        @Column(name = "is_active", nullable = false)
 //        private Boolean isActive;
 
-//    private int greenBonus; // = 10 000;
-//    private int totalBonusFund; //= 10 000 000;
-
-
     public Long getId() {
         return id;
     }
@@ -53,33 +52,14 @@ public class GreenBonus implements Serializable {
         return this;
     }
 
-//    public LocalDate getStartDate() {
-//        return startDate;
-//    }
-//
-//    public GreenBonus setStartDate(LocalDate startDate) {
-//        this.startDate = startDate;
-//        return this;
-//    }
-//
-//    public GreenBonus startDate(LocalDate startDate) {
-//        this.startDate = startDate;
-//        return this;
-//    }
-//
-//    public LocalDate getEndDate() {
-//        return endDate;
-//    }
-//
-//    public GreenBonus setEndDate(LocalDate endDate) {
-//        this.endDate = endDate;
-//        return this;
-//    }
-//
-//    public GreenBonus endDate(LocalDate endDate) {
-//        this.endDate = endDate;
-//        return this;
-//    }
+    public String getBonusName() {
+        return bonusName;
+    }
+
+    public GreenBonus setBonusName(String bonusName) {
+        this.bonusName = bonusName;
+        return this;
+    }
 
     public int getAmount() {
         return amount;
@@ -115,24 +95,49 @@ public class GreenBonus implements Serializable {
         if (quantity > 0) quantity--;
     }
 
+//    public boolean isValid() {
+//        todo in GreenBonusService
+//        return (orderItem.getVehicles().getFuelType() == FuelType.ELECTRIC & orderItem.getVehicles().isUsedVehicle());
+//    }
+
+
+    @Override
+    public String toString() {
+        return "GreenBonus{" + "id=" + id + ", bonusName='" + bonusName + '\'' + ", amount=" + amount + ", quantity=" + quantity + '}';
+    }
+}
+
+//    public LocalDate getStartDate() {
+//        return startDate;
+//    }
+//
+//    public GreenBonus setStartDate(LocalDate startDate) {
+//        this.startDate = startDate;
+//        return this;
+//    }
+//
+//    public GreenBonus startDate(LocalDate startDate) {
+//        this.startDate = startDate;
+//        return this;
+//    }
+//
+//    public LocalDate getEndDate() {
+//        return endDate;
+//    }
+//
+//    public GreenBonus setEndDate(LocalDate endDate) {
+//        this.endDate = endDate;
+//        return this;
+//    }
+//
+//    public GreenBonus endDate(LocalDate endDate) {
+//        this.endDate = endDate;
+//        return this;
+//    }
 //    public boolean isValidToday() {
 //        LocalDate today = LocalDate.now();
 //        return quantity > 0 && today.isAfter(startDate) && today.isBefore(endDate);
 //    }
-
-//    private List<Vehicles> vehicles = new ArrayList<>();
-
-//    public boolean isValid(){
-//        return isValid;} // TODO validate conditions for receive bonus: isUsedVehicle=false, is electric fuelType=true
-
-    @Override
-    public String toString() {
-        return "GreenBonus{" + "id=" + id + "," +
-                " amount=" + amount + "," +
-                " quantity=" + quantity + '}';
-    }
-}
-
 
 
 
