@@ -36,3 +36,21 @@ CREATE TABLE vehicles
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 )
+
+
+CREATE TABLE public.green_bonus
+(
+    id bigint NOT NULL,
+    amount integer NOT NULL,
+    quantity integer NOT NULL,
+    bonus_name character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT green_bonus_pkey PRIMARY KEY (id),
+    CONSTRAINT green_bonus_quantity_check CHECK (quantity <= 1000)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.green_bonus
+    OWNER to postgres;
