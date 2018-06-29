@@ -17,7 +17,7 @@ import java.util.Objects;
 @Table(name = "vehicles")
 
 public class Vehicles implements Serializable {
-    private WebContent.static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     @Id
     @Column(name = "vincode")
@@ -44,16 +44,15 @@ public class Vehicles implements Serializable {
     @Column(name = "fastCharging")
     private boolean fastCharging;
 
-    @NotNull
     @Enumerated(EnumType.STRING)
-    @Column(name = "fuelType", nullable=false)
+    @Column(name = "fuelType")
     private FuelType fuelType;
 
     @Column(name = "price")
     private int price;
 
-//    @Column(name="quantity")   vehicles with the same specifications, but uniquie vinCode
-//    public int quantity;
+//    @Column(name="quantity")  todo vehicles with the same specifications, but uniquie vinCode
+////    public int quantity;
 //    @Column(name="Specifications")
 //    public int specifications;
 
@@ -159,6 +158,8 @@ public class Vehicles implements Serializable {
         return this;
     }
 
+
+
     /**
  *    in case vehicle with same specification, but uniquie vinCode
  */
@@ -168,6 +169,14 @@ public class Vehicles implements Serializable {
 //
 //    public Vehicles setQuantity(int quantity) {
 //        this.quantity = quantity;
+//        return this;
+//    }
+//    public int getSpecifications() {
+//        return specifications;
+//    }
+//
+//    public Vehicles setSpecifications(int specifications) {
+//        this.specifications = specifications;
 //        return this;
 //    }
 
@@ -191,4 +200,24 @@ public class Vehicles implements Serializable {
     }
 
 
+
+    /**
+     *    in case vehicle with same specification, but uniquie vinCode
+     */
+//    public int getQuantity() {
+//        return quantity;
+//    }
+//
+//    public Vehicles setQuantity(int quantity) {
+//        this.quantity = quantity;
+//        return this;
+//    }
+//    public int getSpecifications() {
+//        return specifications;
+//    }
+//
+//    public Vehicles setSpecifications(int specifications) {
+//        this.specifications = specifications;
+//        return this;
+//    }
 }

@@ -27,11 +27,11 @@ public class GreenBonusController {
         return greenBonusServiceImp.getAll();
     }
 
-    @RequestMapping(value = "/greenBonus/{id}", method = RequestMethod.GET)
-    public GreenBonus getGreenBonus(@PathVariable long id) {
-        GreenBonus greenBonus = greenBonusServiceImp.getBonus(id);
-        return greenBonus;
-    }
+//    @RequestMapping(value = "/greenBonus/{id}", method = RequestMethod.GET)
+//    public GreenBonus getGreenBonus(@PathVariable long id) {
+//        GreenBonus greenBonus = greenBonusServiceImp.getBonus(id);
+//        return greenBonus;
+//    }
 
     @RequestMapping(value = "/greenBonus", method = RequestMethod.POST) //create & update
     public GreenBonus createGreenBonus(@RequestBody GreenBonus greenBonus) {

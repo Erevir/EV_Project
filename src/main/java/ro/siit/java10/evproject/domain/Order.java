@@ -3,7 +3,6 @@ package ro.siit.java10.evproject.domain;
 import ro.siit.java10.evproject.domain.enumeration.OrderStatus;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
@@ -29,16 +28,14 @@ public class Order implements Serializable{
     @Column(name = "total_price")
     private long totalPrice;
 
-    @NotNull
     @Enumerated(EnumType.STRING)
-    @Column(name = "status", nullable = false)
+    @Column(name = "status")
     private OrderStatus status;
 
     @Column(name = "payment_info")
     private String paymentInfo;
 
     @ManyToOne
-    @NotNull
     private User user;
 
     @OneToOne

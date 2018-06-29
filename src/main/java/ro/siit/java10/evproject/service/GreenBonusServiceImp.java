@@ -17,8 +17,7 @@ public class GreenBonusServiceImp implements GreenBonusService {
 
     @Autowired
     private GreenBonusDAO greenBonusDAO;
-    private VehicleDAO vehicleDAO;
-    private OrderItemDAO orderItemDAO;
+
 
     @Override
     public List<GreenBonus> getAll() {
@@ -37,4 +36,5 @@ public class GreenBonusServiceImp implements GreenBonusService {
         greenBonusDAO.deleteById(id);
 
     }
+
 }

@@ -8,7 +8,6 @@ import ro.siit.java10.evproject.service.DealershipServiceImp;
 import ro.siit.java10.evproject.service.UserServiceImp;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * REST controller for managing User.
@@ -29,10 +28,10 @@ public class UserController {
         return userServiceImp.getAll();
     }
 
+
     @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
     public User getUser(@PathVariable long id) {
-        User user = userServiceImp.getById(id);
-        return user;
+        return userServiceImp.getById(id);
     }
 
 //    @RequestMapping(value = "/user/findByLastName}", method = RequestMethod.GET)
@@ -41,11 +40,9 @@ public class UserController {
 //        return user;
 //    }
 
-
     @RequestMapping(value = "/users", method = RequestMethod.POST)
     public User createUser(@RequestBody User user) {
-        User createdUser = userServiceImp.createUser(user);
-        return createdUser;
+        return userServiceImp.createUser(user);
     }
 
     @RequestMapping(value = "/users/delete/{id}", method = RequestMethod.DELETE)

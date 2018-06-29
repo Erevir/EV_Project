@@ -17,15 +17,9 @@ import java.util.stream.Collectors;
 @Transactional
 public class VehicleServiceImp implements VehiclesService {
 
-    private final Logger log = LoggerFactory.getLogger(VehicleServiceImp.class);
-
     @Autowired
-    private Vehicles vehicles;
     private VehicleDAO vehicleDAO;
     private DealershipDAO dealershipDAO;
-
-//    private List<Vehicles> vehicles = new ArrayList<>();
-    private List<Dealership>dealerships = new ArrayList<>();
 
     @Override
     public List<Vehicles> getAllVehicles() {
@@ -41,15 +35,13 @@ public class VehicleServiceImp implements VehiclesService {
 
     @Override
     public Vehicles createVehicles(Vehicles vehicleToCreate) {
-//        Optional<Dealership> dealership = dealershipDAO.findById(vehicleToCreate.getDealership().getId());
-//        if (!dealership.isPresent()) {
-//            throw new NotFoundException("Can not create Vehicle, dealership is invalid: " +
-//                    vehicleToCreate.getDealership().getDealershipName());
-//        }
-//        vehicleToCreate.setDealership(dealership.get());
-        Vehicles createVehicle = vehicleDAO.save(vehicleToCreate);
-        log.debug("Created Information for Vehicles: {}", vehicleToCreate);
-        return createVehicle;
+        Optional<Dealership> dealership = dealershipDAO.findById(vehicleToCreate.getDealership().getId());
+        if (!dealership.isPresent()) {
+            throw new NotFoundException("Can not create Vehicle, dealership is invalid: " +
+                    vehicleToCreate.getDealership().getDealershipName());
+        }
+        vehicleToCreate.setDealership(dealership.get());
+        return vehicleDAO.save(vehicleToCreate);
     }
 
 
@@ -57,7 +49,6 @@ public class VehicleServiceImp implements VehiclesService {
     public void deleteVehicles(Long vinCode) {
         Optional<Vehicles> vehicles = vehicleDAO.findById(vinCode);
         if (!vehicles.isPresent()) throw new NotFoundException("Vehicle with id " + vinCode + " does not exist");
-        log.debug("Deleted information for vehicle: {}", vehicleDAO);
         vehicleDAO.deleteById(vinCode);
     }
 
