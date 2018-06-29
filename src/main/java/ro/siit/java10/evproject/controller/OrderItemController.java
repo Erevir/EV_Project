@@ -29,14 +29,12 @@ public class OrderItemController {
 
     @RequestMapping(value = "/orderItem/{id}", method = RequestMethod.GET)
     public OrderItem getOrderItem(@PathVariable long id) {
-        OrderItem orderItem = orderItemServiceImp.getById(id);
-        return orderItem;
+        return orderItemServiceImp.getById(id);
     }
 
     @RequestMapping(value = "/orderItem", method = RequestMethod.POST) //create & update
     public OrderItem createOrderItem(@RequestBody OrderItem orderItem) {
-        OrderItem createdOrderItem = orderItemServiceImp.createOrderItem(orderItem);
-        return createdOrderItem;
+        return orderItemServiceImp.createOrderItem(orderItem);
     }
 
     @RequestMapping(value = "/orderItem/{id}", method = RequestMethod.DELETE)

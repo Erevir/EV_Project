@@ -7,12 +7,9 @@ import ro.siit.java10.evproject.Repository.OrderItemDAO;
 import ro.siit.java10.evproject.Repository.VehicleDAO;
 import ro.siit.java10.evproject.domain.GreenBonus;
 import ro.siit.java10.evproject.exceptions.NotFoundException;
-
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
 
 @Service
 @Transactional
@@ -20,31 +17,17 @@ public class GreenBonusServiceImp implements GreenBonusService {
 
     @Autowired
     private GreenBonusDAO greenBonusDAO;
-    @Autowired
     private VehicleDAO vehicleDAO;
-    @Autowired
     private OrderItemDAO orderItemDAO;
-
-
-    public List<GreenBonus>greenBonuses = new ArrayList<>();
-
 
     @Override
     public List<GreenBonus> getAll() {
-       return greenBonusDAO.findAll();
+        return greenBonusDAO.findAll();
     }
 
     @Override
     public GreenBonus createGreenBonus(GreenBonus greenBonus) {
-        GreenBonus createGreenBonus = greenBonusDAO.save(greenBonus);
-        return createGreenBonus;
-    }
-
-    @Override
-    public GreenBonus getBonus(Long id) {
-        List<GreenBonus> greenBonus = new ArrayList<>();
-        if(!greenBonus.isEmpty())throw new NotFoundException("No more GreenBonuses");
-        return greenBonusDAO.getOne(id);
+        return greenBonusDAO.save(greenBonus);
     }
 
     @Override
@@ -54,6 +37,4 @@ public class GreenBonusServiceImp implements GreenBonusService {
         greenBonusDAO.deleteById(id);
 
     }
-
-
 }

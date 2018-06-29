@@ -5,9 +5,7 @@ import org.springframework.stereotype.Service;
 import ro.siit.java10.evproject.Repository.UserDao;
 import ro.siit.java10.evproject.domain.User;
 import ro.siit.java10.evproject.exceptions.NotFoundException;
-
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,11 +13,8 @@ import java.util.Optional;
 @Transactional
 public class UserServiceImp implements UserService {
 
-    public List<User> users = new ArrayList<>();
-
     @Autowired
     private UserDao userDao;
-
 
     @Override
     public List<User> getAll() {
@@ -28,8 +23,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     public User createUser(User userToCreate) {
-        User createUser = userDao.save(userToCreate);
-        return createUser;
+        return userDao.save(userToCreate);
     }
 
     @Override

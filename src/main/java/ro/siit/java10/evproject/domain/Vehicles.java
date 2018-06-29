@@ -17,7 +17,7 @@ import java.util.Objects;
 @Table(name = "vehicles")
 
 public class Vehicles implements Serializable {
-    private static final long serialVersionUID = 1L;
+    private WebContent.static final long serialVersionUID = 1L;
 
     @Id
     @Column(name = "vincode")

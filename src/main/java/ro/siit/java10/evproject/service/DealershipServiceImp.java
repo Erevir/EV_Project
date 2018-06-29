@@ -6,9 +6,7 @@ import org.springframework.stereotype.Service;
 import ro.siit.java10.evproject.Repository.*;
 import ro.siit.java10.evproject.domain.Dealership;
 import ro.siit.java10.evproject.exceptions.NotFoundException;
-
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,8 +22,6 @@ public class DealershipServiceImp implements DealershipService {
     private GreenBonusDAO greenBonusDAO;
     private OrderDAO orderDAO;
 
-    private List<Dealership> dealerships = new ArrayList<>();
-
     @Override
     public List<Dealership> getAll() {
         return (List<Dealership>) dealershipDAO.findAll();
@@ -33,8 +29,7 @@ public class DealershipServiceImp implements DealershipService {
 
     @Override
     public Dealership createDealership(Dealership dealershipToCreate) {
-        Dealership createDealership = dealershipDAO.save(dealershipToCreate);
-        return createDealership;
+        return dealershipDAO.save(dealershipToCreate);
     }
 
     @Override

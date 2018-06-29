@@ -27,16 +27,15 @@ public class VehicleController {
     public List<Vehicles> listVehiclesSortedByPrice() {
         return vehicleServiceImp.getVehiclesSortedByPrice();
     }
+
     @RequestMapping(value = "/vehicles/{vinCode}", method = RequestMethod.GET)
     public Vehicles getById(@PathVariable Long vinCode) {
-        Vehicles vehicles = vehicleServiceImp.getById(vinCode);
-        return vehicles;
+        return  vehicleServiceImp.getById(vinCode);
     }
 
    @RequestMapping(value = "/vehicles", method = RequestMethod.POST)
     public Vehicles createVehicles(@RequestBody Vehicles vehicles) {
-        Vehicles createdVehicle = vehicleServiceImp.createVehicles(vehicles);
-        return createdVehicle;
+        return vehicleServiceImp.createVehicles(vehicles);
     }
 
     @RequestMapping(value = "/vehicles/delete/{vinCode}", method = RequestMethod.DELETE)
@@ -52,7 +51,7 @@ public class VehicleController {
 
     @RequestMapping(value = "/vehicles/getEV", method = RequestMethod.GET)
     public List<Vehicles> getElectricVehicles() {
-        return vehicleServiceImp.getFastChargingVehiclesInStock();
+        return vehicleServiceImp.getElectricVehicles();
     }
 
     @RequestMapping(value = "/vehicles/getVehicleSortedByPowerEngine", method = RequestMethod.GET)

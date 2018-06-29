@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441e5792-2f63-415d-8d54-7dd187cca05d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EV_Project.iml" afterPath="$PROJECT_DIR$/EV_Project.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/GreenBonusDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/GreenBonusDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderControler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Application.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java" />
@@ -22,40 +13,25 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateUserReguest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateVehiclesReguest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java" afterPath="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WebContent/InterfaceHTML.html" afterPath="$PROJECT_DIR$/src/main/resources/static/templates/InterfaceHTML.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WebContent/product.html" afterPath="$PROJECT_DIR$/src/main/resources/static/templates/product.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WebContent/InterfaceHTML.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WebContent/product.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/DealershipController.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/DealershipController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/OrderControler.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/OrderControler.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/VehicleController.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/VehicleController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/GreenBonus.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/GreenBonus.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Order.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Order.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/OrderItem.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/OrderItem.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/User.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Vehicles.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Vehicles.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusService.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderServiceImp.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehicleServiceImp.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehicleServiceImp.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehiclesService.class" afterPath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehiclesService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/users.html" afterPath="$PROJECT_DIR$/target/classes/templates/users.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/vehiclesNew.html" afterPath="$PROJECT_DIR$/target/classes/templates/vehiclesNew.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/WebContent/lib/javax.servlet-api-4.0.1.jar" afterPath="$PROJECT_DIR$/src/main/resources/library/javax.servlet-api-4.0.1.jar" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/pagestyle.css" afterPath="$PROJECT_DIR$/src/main/resources/WebContent/static/css/pagestyle.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/imagesEV.png" afterPath="$PROJECT_DIR$/src/main/resources/WebContent/static/images/imagesEV.png" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/templates/InterfaceHTML.html" afterPath="$PROJECT_DIR$/src/main/resources/WebContent/static/templates/InterfaceHTML.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/templates/product.html" afterPath="$PROJECT_DIR$/src/main/resources/WebContent/static/templates/product.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterPath="$PROJECT_DIR$/src/main/resources/templates_html/users.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html" afterPath="$PROJECT_DIR$/src/main/resources/templates_html/vehiclesNew.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,11 +44,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="OrderDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderDAO.java">
+      <file leaf-file-name="VehicleServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="49" column="61" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1050#1051#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DealershipDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,23 +70,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderItemDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java">
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="459">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1300#1301#0" expanded="true" />
+                <element signature="e#1350#1351#0" expanded="true" />
+                <element signature="e#1475#1476#0" expanded="true" />
+                <element signature="e#1530#1531#0" expanded="true" />
+                <element signature="e#1878#1879#0" expanded="true" />
+                <element signature="e#1935#1936#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java">
+      <file leaf-file-name="OrderItemController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="507">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="202" column="5" lean-forward="true" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VehiclesService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +124,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java">
+      <file leaf-file-name="OrderServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1395">
+              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#914#915#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderStatus.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
@@ -114,21 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GreenBonusController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/GreenBonusController.java">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="480">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,47 +160,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java">
+      <file leaf-file-name="UserServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding>
-                <element signature="e#1223#1224#0" expanded="true" />
-                <element signature="e#1264#1265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DealershipService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="273">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderItemService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderItemServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -212,20 +207,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/GreenBonusDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/OrderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/OrderItemDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dao_Repository/VehicleDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/exceptions/NotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/dto/CreateVehiclesReguest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/listUsers.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusImp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/users.html" />
@@ -235,24 +224,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/templates/InterfaceHTML.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderControler.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/DealershipController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/GreenBonusController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/FuelType.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Dealership.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/GreenBonus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Vehicles.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java" />
@@ -261,8 +238,26 @@
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/VehicleDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/GreenBonusController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java" />
       </list>
     </option>
   </component>
@@ -272,7 +267,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="340" />
     <option name="y" value="-10" />
     <option name="width" value="1195" />
@@ -363,15 +358,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="evproject" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EV_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="evproject" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -380,31 +366,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EV_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EV_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EV_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="evproject" type="b2602c69:ProjectViewProjectNode" />
@@ -615,7 +576,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -626,7 +587,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35600907" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35600907" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -679,25 +640,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java</url>
-          <line>43</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/DataBase/CreateTable.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/DataBase/dealership_sql_Ev_Dbase.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -759,14 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
@@ -783,12 +722,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/imagesEV.png">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/WebContent/static/images/imagesEV.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/templates/product.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/WebContent/static/templates/product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
@@ -796,7 +735,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/templates/InterfaceHTML.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/WebContent/static/templates/InterfaceHTML.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -804,7 +743,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/users.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates_html/users.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1032">
           <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
@@ -812,7 +751,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/vehiclesNew.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates_html/vehiclesNew.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
@@ -820,59 +759,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/pagestyle.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/WebContent/static/css/pagestyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#923#924#0" expanded="false" />
-            <element signature="e#968#969#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,25 +780,7 @@
         <state relative-caret-position="144">
           <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="62" column="2" lean-forward="true" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="102" column="59" lean-forward="true" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -917,19 +790,7 @@
         <state relative-caret-position="240">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#822#823#0" expanded="false" />
-            <element signature="e#873#874#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -939,26 +800,8 @@
         <state relative-caret-position="312">
           <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +818,7 @@
         <state relative-caret-position="192">
           <caret line="8" column="3" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -985,29 +828,9 @@
         <state relative-caret-position="24">
           <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1274#1275#0" expanded="false" />
+            <element signature="e#1306#1307#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1017,7 +840,7 @@
         <state relative-caret-position="0">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1027,17 +850,7 @@
         <state relative-caret-position="-185">
           <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,7 +860,7 @@
         <state relative-caret-position="240">
           <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1057,17 +870,7 @@
         <state relative-caret-position="216">
           <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1077,7 +880,7 @@
         <state relative-caret-position="264">
           <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1092,56 +895,247 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/GreenBonusController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        <state relative-caret-position="288">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/OrderItemDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/VehicleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#587#588#0" expanded="false" />
+            <element signature="e#644#645#0" expanded="false" />
+            <element signature="e#784#785#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#989#990#0" expanded="false" />
+            <element signature="e#1047#1048#0" expanded="false" />
+            <element signature="e#1842#1843#0" expanded="false" />
+            <element signature="e#1904#1905#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="192">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/DealershipServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#952#953#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/GreenBonusServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#799#800#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderItemServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-117">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1087#1088#0" expanded="false" />
+            <element signature="e#1146#1147#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="264">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehiclesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/Repository/DealershipDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#1530#1531#0" expanded="true" />
+            <element signature="e#1878#1879#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/controller/OrderItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/UserServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/VehicleServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="49" column="61" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="202" column="5" lean-forward="true" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/service/OrderServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="1395">
+          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/siit/java10/evproject/domain/enumeration/OrderStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

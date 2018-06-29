@@ -1,5 +1,7 @@
 package ro.siit.java10.evproject.domain;
 
+import ro.siit.java10.evproject.domain.enumeration.FuelType;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -14,7 +16,7 @@ import java.util.Objects;
 
 public class OrderItem implements Serializable {
 
-        private static final long serialVersionUID = 1L;
+        private WebContent.static final long serialVersionUID = 1L;
 
         @Id
         @GeneratedValue //(strategy = GenerationType.AUTO)
@@ -77,7 +79,10 @@ public class OrderItem implements Serializable {
             return vehicles;
         }
 
-        public OrderItem vehicles(Vehicles vehicles) {
+        public boolean isGreenBonusValid(){
+        return (getVehicles().getFuelType()== FuelType.ELECTRIC & !getVehicles().isUsedVehicle());}
+
+    public OrderItem vehicles(Vehicles vehicles) {
             this.vehicles = vehicles;
             this.price = vehicles.getPrice();
             return this;

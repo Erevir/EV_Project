@@ -1,21 +1,13 @@
 package ro.siit.java10.evproject.service;
 
-import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ro.siit.java10.evproject.Repository.*;
-import ro.siit.java10.evproject.domain.GreenBonus;
-import ro.siit.java10.evproject.domain.Order;
-import ro.siit.java10.evproject.domain.OrderItem;
-import ro.siit.java10.evproject.domain.Vehicles;
-import ro.siit.java10.evproject.domain.enumeration.FuelType;
+import ro.siit.java10.evproject.domain.*;
 import ro.siit.java10.evproject.domain.enumeration.OrderStatus;
 import ro.siit.java10.evproject.exceptions.NotFoundException;
 
 import javax.transaction.Transactional;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,9 +23,7 @@ public class OrderServiceImp implements OrderService {
     private DealershipDAO dealershipDAO;
     private GreenBonusDAO greenBonusDAO;
     private OrderItem orderItem;
-
-
-    List<Order>orders = new ArrayList<>();
+    private User user;
 
     @Override
     public List<Order> getAll() {
@@ -42,15 +32,16 @@ public class OrderServiceImp implements OrderService {
 
     @Override
     public Order getById(Long id) {
-            Optional<Order> order = orderDAO.findById(id);
-            if (!order.isPresent()) throw new NotFoundException("Order with id " + id + " does not exist");
-            return order.get();
+        Optional<Order> order = orderDAO.findById(id);
+        if (!order.isPresent()) throw new NotFoundException("Order with id " + id + " does not exist");
+        return order.get();
     }
 
     @Override
     public Order createOrder(Order orderToCreate) {
         Order createOrder = orderDAO.save(orderToCreate);
-        return createOrder;
+        orderDAO.save(orderToCreate.date(orderToCreate.getDate()).status(OrderStatus.NEW));
+    return orderToCreate;
     }
 
     @Override
@@ -60,55 +51,53 @@ public class OrderServiceImp implements OrderService {
         orderDAO.deleteById(id);
     }
 
-
-//        public boolean isValid(){
-//        return (orderItem.getVehicles().getFuelType()== FuelType.ELECTRIC & orderItem.getVehicles().isUsedVehicle());}
-
     public Order submitOrder(Order order) {
 
-            for (OrderItem item : order.getOrderItems()) {
-                Vehicles vehicles = vehicleDAO.getOne(item.getVehicles().getVinCode());
+        for (OrderItem item : order.getOrderItems()) {
+            Vehicles vehicles = vehicleDAO.getOne(item.getVehicles().getVinCode());
 //                TODO existing vehicle orderItem
+//             ***comment code for case vehicle with same specification, but uniquie vinCode***
 //                Optional<Vehicles> vehicles = vehicleDAO.findById(item.getVehicles().getVinCode());
 //                if (!vehicles.isPresent()) throw new NotFoundException("Vehicle with id " + vinCode + " does not exist");
-
-                /**
-                 * in case vehicle with same specification, but uniquie vinCode
-                 */
 //                if (vehicles.getQuantity() < item.getQuantity()) return null;
 //                item.setVehicles(vehicles.quantity(vehicles.getQuantity() - item.getQuantity()));
-                if (order.getTotalPrice()>order.getUser().getCustomerFunds())throw new NotFoundException("User with does not have enough to buy the vehicle");
-                order.setTotalPrice(order.getTotalPrice() + (vehicles.getPrice() * item.getQuantity()));
-                vehicleDAO.save(vehicles);
-            }
-            if (order.getGreenBonus() != null) {
-                GreenBonus greenBonus = greenBonusDAO.getOne(order.getGreenBonus().getId());
-//                if (!greenBonus.isValid()) return null;
-                greenBonus.useBonus();
-                order.setGreenBonus(greenBonusDAO.save(greenBonus));
-                long normalPrice = order.getTotalPrice();
-                long totalPrice = normalPrice - greenBonus.getAmount();
-                order.setTotalPrice(totalPrice);
-            }
-            return orderDAO.save(order.date(order.getDate()).status(OrderStatus.PENDING));
+            if (order.getTotalPrice() > order.getUser().getCustomerFunds())
+                throw new NotFoundException("User with does not have enough to buy the vehicle");
+            order.setTotalPrice(order.getTotalPrice() + (vehicles.getPrice() * item.getQuantity()));
+            vehicleDAO.save(vehicles);
         }
-
-        public Order rejectOrder(Order order) {
-            // return vehicles and bonus quantity
-            for (OrderItem item : order.getOrderItems()) {
-                Vehicles vehicles = vehicleDAO.getOne(item.getVehicles().getVinCode());
-//                vehicles.addQuantity(item.getQuantity());
-                item.setVehicles(vehicleDAO.save(vehicles));
-            }
-            if (order.getGreenBonus() != null) {
-                GreenBonus greenBonus = greenBonusDAO.getOne(order.getGreenBonus().getId());
-                greenBonus.addQuantity();
-                order.setGreenBonus(greenBonusDAO.save(greenBonus));
-            }
-
-            return orderDAO.save(order.status(OrderStatus.CANCELLED));
+        if (order.getGreenBonus() != null) {
+            GreenBonus greenBonus = greenBonusDAO.getOne(order.getGreenBonus().getId());
+            if (!orderItem.isGreenBonusValid()) return null;
+            greenBonus.useBonus();
+            order.setGreenBonus(greenBonusDAO.save(greenBonus));
+            long normalPrice = order.getTotalPrice();
+            long totalPrice = normalPrice - greenBonus.getAmount();
+            order.setTotalPrice(totalPrice);
         }
+        return orderDAO.save(order.date(order.getDate()).status(OrderStatus.PENDING));
+    }
 
+    public Order rejectOrder(Order order) {
+        // return vehicles and bonus quantity
+        for (OrderItem item : order.getOrderItems()) {
+            Vehicles vehicles = vehicleDAO.getOne(item.getVehicles().getVinCode());
+//              vehicles.addQuantity(item.getQuantity());
+            item.setVehicles(vehicleDAO.save(vehicles));
+        }
+        if (order.getGreenBonus() != null) {
+            GreenBonus greenBonus = greenBonusDAO.getOne(order.getGreenBonus().getId());
+            greenBonus.addQuantity();
+            order.setGreenBonus(greenBonusDAO.save(greenBonus));
+        }
+        return orderDAO.save(order.status(OrderStatus.CANCELLED));
+    }
 
+//   public Order orderTransaction(Order order){
+//        TODO transaction order metod
+//
+//           return orderDao.save(order.status(OrderStatus.PAID));;
+//
+//   }
 
 }
