@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441e5792-2f63-415d-8d54-7dd187cca05d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Application.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Repository/DealershipDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Repository/GreenBonusDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Repository/OrderDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Repository/OrderItemDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Repository/UserDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/Repository/VehicleDAO.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/DealershipController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/GreenBonusController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/OrderController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/OrderItemController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/UserController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/controller/VehicleController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Dealership.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/GreenBonus.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Order.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/OrderItem.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/Vehicles.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/enumeration/FuelType.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/domain/enumeration/OrderStatus.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/exceptions/NotFoundException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/DealershipService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/DealershipServiceImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/GreenBonusServiceImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderItemService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderItemServiceImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/OrderServiceImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/UserService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/UserServiceImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehicleServiceImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/service/VehiclesService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ro/siit/java10/evproject/test/VehicleServiceTest.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -1078,7 +1044,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding />
         </state>
       </provider>
