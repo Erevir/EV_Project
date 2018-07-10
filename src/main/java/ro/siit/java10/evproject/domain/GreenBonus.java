@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Table(name = "GreenBonus")
 public class GreenBonus implements Serializable {
 
-    private WebContent.static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue //(strategy = GenerationType.AUTO)

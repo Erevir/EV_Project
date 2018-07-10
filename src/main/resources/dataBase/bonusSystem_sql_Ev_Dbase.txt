@@ -1,0 +1,5 @@
+INSERT INTO public.green_bonus(
+                       	id, amount, quantity, bonus_name)
+	
+	VALUES (10, 10000, 1000,'GreenBonus');
+

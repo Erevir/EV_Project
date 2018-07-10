@@ -20,7 +20,6 @@ public class OrderServiceImp implements OrderService {
     private OrderItemDAO orderItemDAO;
     private VehicleDAO vehicleDAO;
     private UserDao userDao;
-    private DealershipDAO dealershipDAO;
     private GreenBonusDAO greenBonusDAO;
     private OrderItem orderItem;
     private User user;
@@ -96,7 +95,7 @@ public class OrderServiceImp implements OrderService {
 //   public Order orderTransaction(Order order){
 //        TODO transaction order metod
 //
-//           return orderDao.save(order.status(OrderStatus.PAID));;
+//
 //
 //   }
 

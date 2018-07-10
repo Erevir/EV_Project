@@ -16,95 +16,88 @@ import java.util.Objects;
 
 public class OrderItem implements Serializable {
 
-        private WebContent.static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-        @Id
-        @GeneratedValue //(strategy = GenerationType.AUTO)
-        private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-//        @NotNull
-//        @Min(value = 0)
-        @Column(name = "price", nullable = false)
-        private int price;
+    @Column(name = "price")
+    private int price;
 
-//        @NotNull
-//        @Min(value = 1)
-        @Column(name = "quantity", nullable = false)
-        private Integer quantity;
+    @Column(name = "quantity")
+    private Integer quantity;
 
-        @OneToOne
-        @NotNull
-        private Vehicles vehicles;
+    @OneToOne
+    @NotNull
+    private Vehicles vehicles;
 
-        @ManyToOne
-        @NotNull
-        private Order order;
+    @ManyToOne
+    @NotNull
+    private Order order;
 
 
-        public Long getId() {
-            return id;
-        }
+    public Long getId() {
+        return id;
+    }
 
-        public void setId(Long id) {
-            this.id = id;
-        }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-        public int getPrice() {
-            return price;
-        }
+    public int getPrice() {
+        return price;
+    }
 
-        public void setPrice(int price) {
-            this.price = price;
-        }
+    public void setPrice(int price) {
+        this.price = price;
+    }
 
-        public Integer getQuantity() {
-            return quantity;
-        }
+    public Integer getQuantity() {
+        return quantity;
+    }
 
-        public void setQuantity(Integer quantity) {
-            this.quantity = quantity;
-        }
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 
-        public OrderItem quantity(Integer quantity) {
-            this.quantity = quantity;
-            return this;
-        }
+    public OrderItem quantity(Integer quantity) {
+        this.quantity = quantity;
+        return this;
+    }
 
-        public OrderItem price(int price) {
+    public OrderItem price(int price) {
         this.price = price;
         return this;
-        }
+    }
 
-        public Vehicles getVehicles() {
-            return vehicles;
-        }
+    public Vehicles getVehicles() {
+        return vehicles;
+    }
 
-        public boolean isGreenBonusValid(){
-        return (getVehicles().getFuelType()== FuelType.ELECTRIC & !getVehicles().isUsedVehicle());}
+    public boolean isGreenBonusValid() {
+        return (getVehicles().getFuelType() == FuelType.ELECTRIC & !getVehicles().isUsedVehicle());
+    }
 
     public OrderItem vehicles(Vehicles vehicles) {
-            this.vehicles = vehicles;
-            this.price = vehicles.getPrice();
-            return this;
-        }
+        this.vehicles = vehicles;
+        this.price = vehicles.getPrice();
+        return this;
+    }
 
-        public void setVehicles(Vehicles vehicles) {
-            this.vehicles = vehicles;
-            this.price = vehicles.getPrice();
-        }
+    public void setVehicles(Vehicles vehicles) {
+        this.vehicles = vehicles;
+        this.price = vehicles.getPrice();
+    }
 
-    /*public Order getOrder() {
-        return order;
-    }*/
+    public OrderItem order(Order order) {
+        this.order = order;
+        return this;
+    }
 
-        public OrderItem order(Order order) {
-            this.order = order;
-            return this;
-        }
-
-        public void setOrder(Order order) {
-            this.order = order;
-        }
+    public void setOrder(Order order) {
+        this.order = order;
+    }
 
     public OrderItem merge(OrderItem orderItem) {
         if (orderItem.getVehicles().getVinCode() == vehicles.getVinCode())  //same specification uniquie vinCode
@@ -137,6 +130,5 @@ public class OrderItem implements Serializable {
     public String toString() {
         return "OrderItem{" + "id=" + id + ", price='" + price + "'" + ", quantity='" + quantity + "'" + '}';
     }
-
 
 }
